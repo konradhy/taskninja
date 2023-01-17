@@ -1,0 +1,1 @@
+SELECT firstName,lastName,email,phone,token,ninjaStatus,userId,address,ninjaId FROM users WHERE `email` = '@PARAM_email' ORDER BY `id`

@@ -1,0 +1,1 @@
+UPDATE bookings SET `taskStatus`=''  WHERE `taskId` =taskId

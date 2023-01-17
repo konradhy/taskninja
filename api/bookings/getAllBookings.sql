@@ -1,0 +1,1 @@
+SELECT taskId,jobId,userId,category,firstName,lastName,image,ninjaId,jobDate,jobLocation FROM bookings ORDER BY `jobDate`, `firstName`

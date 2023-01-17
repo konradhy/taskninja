@@ -1,0 +1,1 @@
+SELECT * FROM users WHERE `categories` LIKE '%@PARAM_category%' AND `ninjaStatus` = '1' OR `subcategories` LIKE '%@PARAM_subcategory%' AND `ninjaStatus` = '1' ORDER BY `firstName`

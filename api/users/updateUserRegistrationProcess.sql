@@ -1,0 +1,1 @@
+UPDATE users SET `phone`='' ,`address`='' ,`profilePicture`='' ,`lastUpdated`=NOW() ,`DateOfbirth`=''  WHERE `token` =token

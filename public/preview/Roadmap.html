@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="//s3-eu-west-1.amazonaws.com/dev.appdrag.com/task-ninja-69a87b/config/index.jpg?escape=1599523278261">
+    <meta class="appdrag-og-image-width-and-height" property="og:image:width" content="450">
+    <meta class="appdrag-og-image-width-and-height" property="og:image:height" content="236">
+    <meta name="datasource" datasource-function="websockets/websocket" datasource-id="1" datasource-404="0">
+    <meta class="appdrag-theme-topbar-color" name="theme-color" content="#2196f3">
+    <meta class="appdrag-theme-topbar-color" name="msapplication-navbutton-color" content="#2196f3">
+    <meta class="appdrag-theme-topbar-color" name="apple-mobile-web-app-status-bar-style" content="#2196f3">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="//cf.appdrag.com/resources/appallin-universal-theme.css">
+    <link rel="stylesheet" type="text/css" href="//s3-eu-west-1.amazonaws.com/dev.appdrag.com/resources/css/appdrag.css">
+    <link rel="stylesheet" crossorigin="anonymous" id="appdrag-palette" type="text/css" href="//s3-eu-west-1.amazonaws.com/dev.appdrag.com/task-ninja-69a87b/css/appdrag-palette.css">
+    <link rel="stylesheet" type="text/css" href="//s3-eu-west-1.amazonaws.com/dev.appdrag.com/task-ninja-69a87b/fonts/fonts.css">
+  </head>
+  <body appid="task-ninja-69a87b" class="drawer drawer-close drawer--left" style="overflow-x:hidden">
+    <header class="drawer-header" role="banner" drawer-side="left">
+      <div type="button" class="drawer-hamburger drawer-toggle appdrag-palette-background-color-primary-color" style="color:#2e2e2e">
+        <div class="drawer-topbar" style="font-size:29px;font-family:Oswald">
+          <div class="appdrag-logo-container dynamic-sized-element appdrag-logo-image" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" style="line-height:normal;margin:0 !important;padding:0 !important" padding-tablet-top="5" padding-tablet-bottom="0">
+            <div class="appdrag-image" link-target="none">
+              <img src="//s3-eu-west-1.amazonaws.com/dev.appdrag.com/task-ninja-69a87b/uploads/1589113154480-Task-Ninja.png" style="margin:0 auto;float:left;background-position:center center;background-size:cover;background-repeat:no-repeat" class="img img-responsive" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+            </div>
+            <div class="appdrag-element text-logo" style="position:relative;margin-top:0;padding:0 !important">
+              <span style="font-size:22px"><span style="letter-spacing:.1em"><span style="font-family:roboto"><span class="appdrag-palette-color-text-color" ck-color-back="text-color">APPDRAG</span></span></span></span>
+            </div>
+          </div>
+        </div>
+        <span class="sr-only">toggle navigation</span> <span class="drawer-hamburger-icon" style="background-color:#2e2e2e"></span>
+      </div>
+      <nav class="drawer-nav appdrag-palette-background-color-primary-color" role="navigation" style="color:#2e2e2e;touch-action:none;display:none">
+        <ul class="drawer-menu" style="transition-timing-function:cubic-bezier(.1,.57,.1,1);transition-duration:0ms;transform:translate(0,0) translateZ(0)">
+          <li>
+            <a class="drawer-menu-item" href="index" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">Home</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Client-Area" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">Client Dashboard</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item drawer-child" href="updateUserProfile" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:25px !important">Update Profile</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Jobs" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">Tasks</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="ninja_home_page" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">Ninja Dashboard</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item drawer-child" href="Bookings" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:25px !important">Available Jobs</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Login" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">Login</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item drawer-child" href="Register" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:25px !important">Register</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="onboarding" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">onboarding</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Swag" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">Swag</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Contact" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">Contact</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="test?email=[DS1=email]" style="color:#2e2e2e;font-size:16px;font-weight:lighter;letter-spacing:.01em;text-transform:capitalize;font-family:Helvetica;border-bottom-color:#e6e6e6;padding-left:10px !important">test page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <appdraghead id="appallin-head-import">
+    </appdraghead>
+    <div class="lightbox-target" id="lightbox-target">
+      <img src="" class="lightbox-image">
+      <div class="lightbox-nav">
+        <span class="lightbox-prev"><i class="fa fa-arrow-left"></i></span><span class="lightbox-next"><i class="fa fa-arrow-right"></i></span>
+      </div>
+      <div class="lightbox-caption">
+      </div>
+      <span class="lightbox-close"></span>
+    </div>
+    <main role="main" class="drawer-container t-gutter">
+      <div class="section-container" style="top:0">
+        <div id="appallin-header-container" class="visible" style="display:block">
+          <section class="appallin-universal-section appallin-universal-navbar appallin-universal-navbar-dark hidden-sm hidden-xs dynamic-sized-element small-height" style='background-color:#2e2e2e;background-size:auto;background-position:center center;background-repeat:repeat;background-image:url("//cf.appdrag.com/task-ninja-69a87b/uploads/a61b747f-661e-4b93-938d-88f0fb7dc781.png");margin:0 !important;padding:10px 0 0 !important' margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="10" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" video-background-poster="" video-background-path="" id="ui-id-1" category="Headers / Footers" market-id="3699364" owner-id="4">
+            <div class="container container-fullwidth">
+              <div class="row">
+                <div class="col-sm-2 col-smp-2 dynamic-sized-element col-md-3" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="3" padding-desktop-right="4" style="text-align:left;margin:0 !important;padding:0 4px 0 3px !important">
+                  <div class="appdrag-logo-container dynamic-sized-element appdrag-logo-image" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" style="margin:0 !important;padding:0 !important" category="Logos" market-id="3699393" owner-id="1">
+                    <div class="appdrag-image" link-target="none">
+                      <img style="background-color:rgba(0,0,0,0);margin:0 auto;background-position:center center;background-size:cover;background-repeat:no-repeat;width:250px" class="img img-responsive appallin-universal-background-zoom" video-background-poster="" video-background-path="" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" disabled-src="//cf.appdrag.com/wassimdemo/uploads/95e9ff63-233c-4735-9615-23a4d3ac3f90.png" src="//s3-eu-west-1.amazonaws.com/dev.appdrag.com/task-ninja-69a87b/uploads/1589113154480-Task-Ninja.png">
+                    </div>
+                    <div class="appdrag-element text-logo" style="position:relative;text-align:center !important;padding:0 !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+                      <font color="#212121" face="roboto">
+                        <span style="font-size:25px;letter-spacing:2.5px"><strong>Text </strong><span>Logo</span></span>
+                      </font>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-8 col-smp-8 col-md-7">
+                  <div class="appdrag-menu navbar dynamic-sized-element" role="navigation" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="12" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" style="margin:0 0 0 12px !important;padding:0 !important">
+                    <div class="collapse navbar-collapse appallin-generated-navbar appdrag-menu-disable-last-right-border" background="rgba(0,0,0,0)" font-size="14" font-family="Open Sans" font-color="rgba(255,255,255,1)" hover-font-color="primary-color" hover-buttons-background="rgba(0,0,0,0)" buttons-border-top-width="0" buttons-border-top-color="transparent" buttons-border-top-style="none" buttons-border-bottom-width="0" buttons-border-bottom-color="transparent" buttons-border-bottom-style="none" buttons-border-right-width="0" buttons-border-right-color="transparent" buttons-border-right-style="none" buttons-border-left-width="0" buttons-border-left-color="transparent" buttons-border-left-style="none" buttons-padding-top="32" buttons-padding-left="20" buttons-padding-right="20" buttons-padding-bottom="30" buttons-text-align="right" display-caret="false" sublevel-background="rgba(43,43,43,1)" border-hover-bottom-width="3px" border-hover-bottom-color="rgba(252,120,165,1)" border-hover-bottom-style="solid" border-hover-top-width="2px" border-hover-top-color="rgba(240,67,67,1)" border-hover-top-style="none" border-hover-left-width="2px" border-hover-left-color="rgba(240,67,67,1)" border-hover-left-style="none" border-hover-right-width="2px" border-hover-right-color="rgba(82,82,82,1)" border-hover-right-style="none" border-top-width="px" border-top-color="" border-top-style="none" border-left-width="2px" border-left-color="rgba(130,55,55,1)" border-left-style="none" border-right-width="1px" border-right-color="rgba(82,82,82,1)" border-right-style="solid" border-bottom-width="px" border-bottom-color="" border-bottom-style="none" topbar-background-color="primary-color" topbar-drawer-border-color="rgba(230,230,230,1)" topbar-topbar-text-color="text-color" topbar-drawer-text-color="rgba(46,46,46,1)" topbar-topbar-font-size="29" topbar-drawer-font-size="16" topbar-topbar-font-family="Oswald" topbar-drawer-font-family="Helvetica" topbar-topbar-font-weight="" topbar-drawer-font-weight="lighter" topbar-logo="" drawer-logo="http://appdrag.com.s3-eu-west-1.amazonaws.com/AppDrag-250-black.png" topbar-title="Appdrag" topbar-logo-type="none" logo-right-space="20" logo-left-space="5" logo-top-space="13" logo-bottom-space="14" font-weight="300" logo-height="62" menu-position="left" logo-position="left" logo-width="120" transparent="false" letter-spacing="0" topbar-drawer-letter-spacing="1" text-transform="uppercase" html-ext="0" topbar-drawer-text-transform="capitalize">
+                      <li class="appallin-menu-single-item">
+                        <a href="" class="appallin-menu-single-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-single-item-title">Single item</span></a>
+                      </li>
+                      <li class="appallin-menu-container-item">
+                        <a href="" class="appallin-menu-container-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-container-item-title">Container</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                        <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#2b2b2b">
+                        </ul>
+                      </li>
+                      <ul class="nav navbar-nav appallin-generated-menu noselect" style="background-color:transparent">
+                        <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#525252">
+                          <a href="./" class="appallin-menu-container-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-container-item-title">Home</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                          <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#2b2b2b">
+                          </ul>
+                        </li>
+                        <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#525252">
+                          <a href="Client-Area" class="appallin-menu-container-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-container-item-title">Client Dashboard</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                          <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#2b2b2b">
+                            <li class="appallin-menu-single" style="border-style:none;border-width:initial;border-color:initial;margin-right:0">
+                              <a href="updateUserProfile" class="appallin-menu-single-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 5px; text-align: initial; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-single-item-title">Update Profile</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#525252">
+                          <a href="Jobs" class="appallin-menu-container-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-container-item-title">Tasks</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                          <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#2b2b2b">
+                          </ul>
+                        </li>
+                        <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#525252">
+                          <a href="ninja_home_page" class="appallin-menu-container-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-container-item-title">Ninja Dashboard</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                          <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#2b2b2b">
+                            <li class="appallin-menu-single" style="border-style:none;border-width:initial;border-color:initial;margin-right:0">
+                              <a href="Bookings" class="appallin-menu-single-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 5px; text-align: initial; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-single-item-title">Available Jobs</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#525252">
+                          <a href="Login" class="appallin-menu-container-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-container-item-title">Login</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                          <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#2b2b2b">
+                            <li class="appallin-menu-single" style="border-style:none;border-width:initial;border-color:initial;margin-right:0">
+                              <a href="Register" class="appallin-menu-single-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 5px; text-align: initial; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-single-item-title">Register</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="appallin-menu-single" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#525252">
+                          <a href="onboarding" class="appallin-menu-single-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-single-item-title">onboarding</span></a>
+                        </li>
+                        <li class="appallin-menu-single" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#525252">
+                          <a href="Swag" class="appallin-menu-single-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-single-item-title">Swag</span></a>
+                        </li>
+                        <li class="appallin-menu-single" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#525252">
+                          <a href="Contact" class="appallin-menu-single-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-single-item-title">Contact</span></a>
+                        </li>
+                        <li class="appallin-menu-single" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;border-right-color:#525252">
+                          <a href="test?email=[DS1=email]" class="appallin-menu-single-item-link appdrag-palette-color-hover-primary-color" style='background-color: rgba(0, 0, 0, 0); font-size: 14px; font-weight: 300; padding: 32px 20px 30px; text-align: left; letter-spacing: 0em; font-family: "Open Sans"; text-transform: uppercase; color: rgb(255, 255, 255);'><span class="appallin-menu-single-item-title">test page</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 col-smp-2 col-md-2">
+                  <table class="appdrag-structure-element reset" style="border-color:#424242;border-style:solid;border-width:1px">
+                    <tbody>
+                      <tr>
+                        <td style="width:50%" height="20" class="col-table-12" table-desktop-width="50%" table-mobile-width="50%" table-tablet-width="50%" table-tablet-portrait-width="50%">
+                          <p style="position:relative;text-align:right !important" market-id="3700137" owner-id="4" link-target="page" link-local="Login">
+                            <span style="text-decoration:inherit" class="appdrag-palette-color-light-primary-color" ck-color-back="light-primary-color">Log in</span>
+                          </p>
+                        </td>
+                        <td style="width:50%" height="20" class="col-table-10" table-desktop-width="50%" table-mobile-width="50%" table-tablet-width="50%" table-tablet-portrait-width="50%">
+                          <p style="position:relative;text-align:right" market-id="3700137" owner-id="4" link-target="none" link-local="Login" class="javascript-trigger" javascript-trigger="%20%20%20localStorage.setItem(%22email%22%2C%20null)%3B%0D%0A%20%20%20localStorage.setItem(%22token%22%2C%20null)%3B%0D%0A%20%20%20localStorage.setItem(%22userId%22%2C%20null)%3B%0D%0A%20%20%20localStorage.setItem(%22ninjaId%22%2C%20null)%3B%0D%0A%20%20%20localStorage.setItem(%22firstName%22%2C%20null)%3B%0D%0A%0D%0A%20%20%20localStorage.setItem(%22FBLogoutTrigger%22%2C%20%22logout%22)%3B%0D%0A%0D%0A%20%20%20window.location.href%20%3D%20%22Login%22">
+                            <span style="text-decoration:inherit" class="appdrag-palette-color-light-primary-color" ck-color-back="light-primary-color">Log out</span>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="appallin-universal-section au-pt-20 dynamic-sized-element section-hovered" style="background-attachment:fixed;background-color:rgba(0,0,0,0);background-size:cover;background-position:center center;background-repeat:no-repeat;padding:202px 0 !important;margin:0 !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="202" padding-desktop-bottom="202" padding-desktop-left="0" padding-desktop-right="0" video-background-poster="" video-background-path="" id="ui-id-194" market-id="3698873" owner-id="25" category="Hero">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12" style="margin:0 !important;padding:0 15px !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="15" padding-desktop-right="15">
+                <h1 class="appdrag-element" style="position:relative;text-align:center !important;margin:20px 0 !important;padding:0 !important" margin-desktop-top="20" margin-desktop-bottom="20" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+                  <br>
+                </h1>
+                <h2 class="appdrag-element" style="position:relative;text-align:center !important;margin:20px 0 !important;padding:0 !important" margin-desktop-top="20" margin-desktop-bottom="20" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+                  <span style="font-size:16px"><span class="appdrag-palette-color-text-color" ck-color-back="text-color"><span style="font-family:montserrat"><span style="font-family:montserrat"><span style="text-decoration:inherit" class="appdrag-palette-color-secondary-text-color" ck-color-back="secondary-text-color">Lesson </span></span></span></span></span>https://cssanimation.rocks/scroll-animations/
+                </h2>
+                <div class="appdrag-embed" cursor-pos="3" embed-title="Edit HTML Code" category="Source Code" market-id="3699549" owner-id="1">
+                  <header class="header show-on-scroll">
+                    <div class="main-photo">
+                    </div>
+                    <h1 src="https://p132.p1.n0.cdn.getcloudapp.com/items/rRu95Znr/Task%20Ninja.png?v=3bad6f72ff3f17b7d5f22d097affc293" class="heading show-on-scroll">
+                      When the moon hits your eye
+                    </h1>
+                  </header>
+                  <article class="content">
+                    <p>
+                      <strong>The history of pizza begins in antiquity, when various ancient cultures produced flatbreads with toppings.</strong>
+                    </p>
+                    <p>
+                      The word pizza was first documented in AD 997 in Gaeta and successively in different parts of Central and Southern Italy. The precursor of pizza was probably the focaccia, a flat bread known to the Romans as panis focacius, to which toppings were then added.
+                    </p>
+                    <p>
+                      Modern pizza developed in Naples, when tomato was added to the focaccia in the late 18th century. However, pizza was mainly eaten in the country of Italy and by immigrants from there. This changed after World War II, when Allied troops stationed in Italy came to enjoy pizza along with other Italian foods.
+                    </p>
+                    <img src="https://p132.p1.n0.cdn.getcloudapp.com/items/rRu95Znr/Task%20Ninja.png?v=3bad6f72ff3f17b7d5f22d097affc293" class="inline-photo show-on-scroll is-invisible">
+                    <h2>
+                      Make an Italian pizza
+                    </h2>
+                    <p>
+                      (makes dough for 4 pizzas, each one about 12 inches in diameter)
+                    </p>
+                    <h3>
+                      Ingredients
+                    </h3>
+                    <ul>
+                      <li>
+                        600 mL of warm water
+                      </li>
+                      <li>
+                        7 cups (1kg) flour
+                      </li>
+                      <li>
+                        2.5 – 3 tablespoons (25 grams) of fresh yeast or 2 teaspoons (7-8 grams) of dried yeast
+                      </li>
+                      <li>
+                        6 tablespoons of extra virgin olive oil
+                      </li>
+                      <li>
+                        1.5 teaspoons salt
+                      </li>
+                      <li>
+                        2 teaspoons sugar
+                      </li>
+                    </ul>
+                    <img src="https://p132.p1.n0.cdn.getcloudapp.com/items/rRu95Znr/Task%20Ninja.png?v=3bad6f72ff3f17b7d5f22d097affc293" class="inline-photo show-on-scroll is-invisible">
+                    <h3>
+                      Method
+                    </h3>
+                    <p>
+                      Sprinkle the yeast into a medium bowl with the warm water. We don’t mean hot, and we don’t mean cold… we mean warm! That’s the kind the yeast likes best. Stir until the yeast dissolves.
+                    </p>
+                    <p>
+                      Place almost all of the flour on the table in the shape of a volcano. (Think Mt. Vesuvius… appropriate since Naples is the king of all pizza cities!).
+                    </p>
+                    <p>
+                      Pour the yeast-and-warm-water mix, along with the other ingredients, into the “crater” of the volcano.
+                    </p>
+                    <p>
+                      Knead everything together for 10 to 15 minutes until the dough is smooth and elastic, keeping your surface floured.
+                    </p>
+                    <img src="https://p132.p1.n0.cdn.getcloudapp.com/items/rRu95Znr/Task%20Ninja.png?v=3bad6f72ff3f17b7d5f22d097affc293" class="inline-photo show-on-scroll">
+                    <p>
+                      Grease up a bowl with some olive oil and put the dough inside. Turn the dough around so the top is slightly oiled.
+                    </p>
+                    <p>
+                      Cover the bowl and put the dough aside to let it rest for at least four or five hours.
+                    </p>
+                    <p>
+                      (optional for those who want their pizza really authentic). Make a cross on top of the dough with a knife. An old Italian tradition, this is seen as a way of “blessing the bread.”
+                    </p>
+                    <p>
+                      Preheat the oven to about 400°F, or about 200°C.
+                    </p>
+                    <p>
+                      Dump the dough out of the bowl and back onto the floured surface. Punch it down, getting rid of any bubbles. (Note: Now’s the time to enlist a kid with more energy than they know what to do with!).
+                    </p>
+                    <p>
+                      Divide the dough in half and let it rest for a few minutes.
+                    </p>
+                    <p>
+                      Roll each section into a 12-inch disc. Now’s your chance to decide how thick you want your pizza to be! Do you want it pizza alta (Neapolitan-style) or pizza bassa (Roman-style)? Just remember, your crust will puff up a little bit as it’s baked!
+                    </p>
+                    <img src="https://p132.p1.n0.cdn.getcloudapp.com/items/rRu95Znr/Task%20Ninja.png?v=3bad6f72ff3f17b7d5f22d097affc293" class="inline-photo show-on-scroll is-invisible">
+                    <p>
+                      Transfer the dough onto an oiled pizza pan or baking sheet.
+                    </p>
+                    <p>
+                      Add tomato sauce, if you want a pizza rossa (red pizza). Lots of pizzas in Italy are actually pizza bianca, without tomato sauce, so don’t feel like you have to! Brush the edges of the crust with a little bit of olive oil.
+                    </p>
+                    <p>
+                      Bake each pizza for about 10 minutes, then add mozzarella cheese (sliced or grated) on top, as well as any other ingredients.
+                    </p>
+                    <p>
+                      Let the pizzas bake until the crust is browned and the cheese is melted. By lifting up the pizza to peek underneath, you can make sure the bottom has browned, too.
+                    </p>
+                    <p>
+                      Remove your pizzas from the oven and, for a real Italian touch, garnish with a few basil leaves. And enjoy!
+                    </p>
+                    <img src="https://p132.p1.n0.cdn.getcloudapp.com/items/rRu95Znr/Task%20Ninja.png?v=3bad6f72ff3f17b7d5f22d097affc293" class="inline-photo show-on-scroll is-invisible">
+                    <p class="credit">
+                      More info about pizza can be found <a href="https://en.wikipedia.org/wiki/History_of_pizza">on Wikipedia</a>. Recipe from <a href="https://www.walksofitaly.com/blog/food-and-wine/italian-pizza-dough-recipe">Walks Of Italy</a>.
+                    </p>
+                  </article>
+                  <script src="javascripts/show-on-scroll.js" appdrag-embed="true">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="appdrag-embed" cursor-pos="13" embed-title="Edit CSS Code" category="Source Code" market-id="3699548" owner-id="1">
+                  <style>
+                    .inline-photo{border:1em solid #fff;border-bottom:4em solid #fff;border-radius:.25em;box-shadow:1em 1em 2em .25em rgba(0,0,0,.2);margin:2em auto;max-width:600px;opacity:0;-webkit-transform:translateY(4em) rotateZ(-5deg);transform:translateY(4em) rotateZ(-5deg);-webkit-transition:opacity .3s .25s ease-out,-webkit-transform 4s .25s cubic-bezier(0,1,.3,1);transition:opacity .3s 1s ease-out,-webkit-transform 4s .25s cubic-bezier(0,1,.3,1);transition:transform 4s 1s cubic-bezier(0,1,.3,1),opacity .3s .25s ease-out;transition:transform 4s 1s cubic-bezier(0,1,.3,1),opacity .3s .25s ease-out,-webkit-transform 4s .25s cubic-bezier(0,1,.3,1);width:90%;position:relative;right:2000px;will-change:transform,opacity}.inline-photo.is-visible{opacity:1;-webkit-transform:rotateZ(-2deg);transform:translate(2000px)}header{opacity:0;-webkit-transition:opacity .5s .25s ease-out;transition:opacity .5s .25s ease-out}header.is-visible{opacity:1}.main-photo{-webkit-transform:scale(.8);transform:scale(.8)}.heading{-webkit-transform:translate(-50%,calc(-50% + 1em));transform:translate(-50%,calc(-50% + 1em))}.is-visible .main-photo{-webkit-transform:none;transform:none}.is-visible .heading{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.main-photo,.heading{-webkit-transition:-webkit-transform 4s .25s cubic-bezier(0,1,.3,1);transition:-webkit-transform 4s .25s cubic-bezier(0,1,.3,1);transition:transform 4s .25s cubic-bezier(0,1,.3,1);transition:transform 4s .25s cubic-bezier(0,1,.3,1),-webkit-transform 4s .25s cubic-bezier(0,1,.3,1);will-change:transform}
+                  </style>
+                </div>
+                <div class="appdrag-embed" cursor-pos="24" embed-title="Edit Javascript Code" category="Source Code" market-id="3699547" owner-id="1">
+                  <script appdrag-embed="true">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+   // Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+  elementsToShow.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
+
+  scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+function isElementInViewport(el) {
+
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 wow" wow-animation="fadeInLeft" style=";animation-name:fadeInLeft;visibility:hidden">
+                <div class="appallin-universal-rectangle-image wow" title="" style='background-repeat:no-repeat;background-image:url("//cf.appdrag.com/task-ninja-69a87b/uploads/84a18775-5ca8-479b-bd61-1951e87d75db.jpg");animation-name:fadeInLeft;animation-duration:5s;visibility:hidden' category="Images" video-background-poster="" video-background-path="" market-id="3700099" owner-id="1" wow-animation="fadeInLeft" data-wow-duration="5s">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="appallin-footer-container" class="visible" style="display:block">
+          <div class="appallin-universal-section au-pt-20 dark-primary-color text-color text-color text-color text-color secondary-text-color dynamic-sized-element appdrag-palette-background-color-dark-blue flash-done" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="70" padding-desktop-bottom="70" padding-desktop-left="0" padding-desktop-right="0" style="padding:70px 0 !important;margin:0 !important" id="ui-id-8" category="Headers / Footers" market-id="3699140" owner-id="25">
+            <div class="container">
+              <div class="row">
+                <div class="dynamic-sized-element col-sm-4 col-smp-4 col-md-4" style="width:calc(33.3333% - 33px);margin:0 33px 0 0 !important;padding:0 15px !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="33" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="15" padding-desktop-right="15" margin-mobile-bottom="30">
+                  <div class="appdrag-element appdrag-text-edit" style="position:relative;padding:0 0 5px !important;margin-top:20px !important;margin-right:0 !important;margin-bottom:10px !important;margin-left:0" margin-desktop-top="20" margin-desktop-bottom="10" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="5" padding-desktop-left="0" padding-desktop-right="0">
+                    <strong><span style="font-size:24px"><span style="color:#fff">Follow Us</span></span></strong>
+                  </div>
+                  <p style="position:relative;margin-top:15px !important;margin-right:0 !important;margin-bottom:5px !important;margin-left:0;padding:0 0 15px !important;text-align:left !important" margin-desktop-top="15" margin-desktop-bottom="5" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="15" padding-desktop-left="0" padding-desktop-right="0">
+                    <span style="text-decoration:inherit;color:#f0e6e6"><span style="letter-spacing:.02em"><span style="font-size:16px"><span style="line-height:1.5">We pride ourselves in connecting you to high quality professionals. If you are unsatisfied in any way please don't hesitate to contact us. </span></span></span></span>
+                  </p>
+                  <table class="appdrag-structure-element">
+                    <tbody>
+                      <tr>
+                        <td style="left:0;width:12.5767%" table-desktop-width="12.576687116564422%" height="20">
+                          <div class="appdrag-element appdrag-icon-container primary-color appdrag-palette-color-secondary-text-color appdrag-text-edit" style="text-align:left;font-size:24px;color:#3b5998;left:0;width:13.4969%" link-target="url" link-url="https://www.facebook.com/AskTaskNinja/" link-type="tab" table-desktop-width="13.496932515337424%">
+                            <i icon="fa-facebook-square" class="appdrag-icon fa fa-facebook-square"></i>
+                          </div>
+                        </td>
+                        <td style="width:12.8834%" table-desktop-width="12.883435582822086%" height="20">
+                          <div class="appdrag-element appdrag-icon-container primary-color appdrag-palette-color-secondary-text-color appdrag-text-edit" style="text-align:left;font-size:24px;color:#1da1f2" link-target="url" link-url="https://twitter.com/asktaskninja" link-type="tab">
+                            <i icon="fa-twitter-square" class="appdrag-icon fa fa-twitter-square"></i>
+                          </div>
+                        </td>
+                        <td style="left:0;width:12.8834%" table-desktop-width="12.883435582822084%" height="20">
+                          <div class="appdrag-element appdrag-icon-container primary-color appdrag-text-edit" style="text-align:left;font-size:24px;color:#fff" link-target="url" link-url="https://www.instagram.com/asktaskninja/" link-type="tab">
+                            <i icon="fab fa-instagram" icon-rotation="" icon-animation="" class="appdrag-icon fab fa-instagram"></i>
+                          </div>
+                        </td>
+                        <td style="width:61.3497%" table-desktop-width="61.34969325153374%" height="20">
+                          <div class="appdrag-element appdrag-icon-container primary-color appdrag-palette-color-secondary-text-color appdrag-text-edit" style="text-align:left;font-size:24px;color:#006fa6" link-target="url" link-url="https://www.linkedin.com/company/task-ninja-jamaica" link-type="tab">
+                            <i icon="fa-linkedin-square" class="appdrag-icon fa fa-linkedin-square"></i>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p style="position:relative;margin-top:15px !important;margin-right:0 !important;margin-bottom:5px !important;margin-left:0;padding:10px 0 0 !important;text-align:left !important" margin-desktop-top="15" margin-desktop-bottom="5" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="10" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+                    <span style="font-family:Helvetica"><span style="text-decoration:inherit" class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="letter-spacing:.02em"><span style="font-size:16px"><span style="line-height:1.5">Task Ninja Services © All Rights Reserved. </span><span style="line-height:1.5">Terms of Use</span><span style="line-height:1.5">and Privacy Policy</span></span></span></span></span>
+                  </p>
+                </div>
+                <div class="dynamic-sized-element col-sm-4 col-smp-4 col-md-4" style="margin:0 !important;padding:0 15px !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="15" padding-desktop-right="15" margin-mobile-bottom="30">
+                  <div class="appdrag-element appdrag-text-edit" style="position:relative;padding:0 0 5px !important;margin-top:20px !important;margin-right:0 !important;margin-bottom:10px !important;margin-left:0" margin-desktop-top="20" margin-desktop-bottom="10" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="5" padding-desktop-left="0" padding-desktop-right="0">
+                    <strong><span style="font-size:24px"><span style="color:#fff"><span>General Information</span></span></span></strong>
+                  </div>
+                  <div style="position:relative;margin-top:15px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important;text-align:left !important" margin-desktop-top="15" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" class="appdrag-text-edit" link-target="page" link-local="index">
+                    <span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px"><span style="line-height:1.5">Home</span></span></span>
+                  </div>
+                  <div style="position:relative;margin-top:6px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important;text-align:left !important" margin-desktop-top="6" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" class="appdrag-text-edit">
+                    <span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px">Interested in investing?</span></span>
+                  </div>
+                  <div style="position:relative;margin-top:6px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important;text-align:left !important" margin-desktop-top="6" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" class="appdrag-text-edit" link-local="Jobs" link-target="page">
+                    <span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px"><span style="line-height:1.5">Book a Task</span></span></span>
+                  </div>
+                  <div style="position:relative;margin-top:6px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important;text-align:left !important" margin-desktop-top="6" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" class="appdrag-text-edit" link-target="page" link-local="ninjaSignup">
+                    <span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px"><span style="line-height:1.5">Become a Ninja</span></span></span>
+                  </div>
+                  <div style="position:relative;margin-top:6px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important;text-align:left !important" margin-desktop-top="6" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" class="appdrag-text-edit" link-target="url" link-url="http://help.taskninjaservices.com/">
+                    <a data-cke-saved-href="http://help.taskninjaservices.com/" href="http://help.taskninjaservices.com/"><span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px"><span style="line-height:1.5">Support and FAQ</span></span></span></a>
+                  </div>
+                  <div style="position:relative;margin-top:6px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important;text-align:left !important" margin-desktop-top="6" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" class="appdrag-text-edit">
+                    <span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px"><span style="line-height:1.5"><span><span><span><span>Terms of Use</span></span></span></span></span></span></span>
+                  </div>
+                  <div style="position:relative;margin-top:6px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important;text-align:left !important" margin-desktop-top="6" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" class="appdrag-text-edit">
+                    <span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px"><span style="line-height:1.5"><span><span><span><span>Privacy Policy</span></span></span></span></span></span></span>
+                  </div>
+                  <div style="position:relative;margin-top:6px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important;text-align:left !important" margin-desktop-top="6" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" class="appdrag-text-edit" link-target="page" link-local="onboarding">
+                    <span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px">Tutorial</span></span>
+                  </div>
+                  <div class="appdrag-button-container dynamic-sized-element" style="text-align:left;margin:0 !important;padding:0 !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" btn-align="left">
+                    <span class="appdrag-button primary-color test appdrag-palette-background-color-dark-primary-color" hover-color="rgba(254,255,255,1)" hover-background-color="dark-primary-color" style='color: rgb(255, 255, 255); border-radius: 5px; font-size: 16px; font-family: "Open Sans"; font-weight: bold; padding: 15px 30px !important; margin-top: 10px !important; margin-bottom: 0px !important;' fs-d="16" link-target="url" link-url="buymeacoff.ee/konrad" link-type="current" link-local="" link-mail="ask@taskninjaservices.com" link-anchor="" link-share="facebook" margin-desktop-top="10" padding-desktop-top="15" padding-desktop-bottom="15" padding-desktop-left="30" padding-desktop-right="30"><span>Donate 1 day of server fees</span></span>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-smp-4 col-md-4">
+                  <div class="appdrag-element appdrag-text-edit" style="position:relative;padding:0 0 5px !important;margin-top:20px !important;margin-right:0 !important;margin-bottom:10px !important;margin-left:0" margin-desktop-top="20" margin-desktop-bottom="10" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="5" padding-desktop-left="0" padding-desktop-right="0">
+                    <span style="color:#fff"><span style="font-size:24px"><b>Trouble finding what you're looking for?</b></span></span>
+                  </div>
+                  <p style="position:relative;margin-top:15px !important;margin-right:0 !important;margin-bottom:20px !important;margin-left:0;padding:0 0 15px !important;text-align:left !important" margin-desktop-top="15" margin-desktop-bottom="20" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="15" padding-desktop-left="0" padding-desktop-right="0">
+                    <span class="appdrag-palette-color-divider-color" ck-color-back="divider-color"><span style="font-size:13px"><span style="line-height:1.5">Ask us any question. Our Customer Service team is trained to handle anything.</span></span></span>
+                  </p>
+                  <div class="appdrag-button-container dynamic-sized-element" style="text-align:left;margin:0 !important;padding:0 !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" link-type="current" btn-align="left" link-target="mail" link-mail="ask@taskninjaservices.com">
+                    <span class="appdrag-button primary-color test appdrag-palette-background-color-dark-primary-color" hover-color="rgba(254,255,255,1)" hover-background-color="dark-primary-color" style='color: rgb(255, 255, 255); border-radius: 5px; padding: 15px 30px; font-size: 16px; font-family: "Open Sans"; font-weight: bold;' fs-d="16"><span>Contact us</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="cke_screen_reader_only cke_copyformatting_notification">
+      <div aria-live="polite">
+      </div>
+    </div>
+    <script id="appdrag-js" async src="//cf.appdrag.com/resources/js/appdrag.js">
+    </script>
+  </body>
+</html>

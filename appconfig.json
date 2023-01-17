@@ -1,0 +1,1735 @@
+{
+    "env": "PROD",
+    "version": "1.0.0",
+    "title": "task-ninja-69a87b",
+    "description": "Task Ninja Web App",
+    "domains": [
+        "*"
+    ],
+    "publicFolder": "./public",
+    "TypeAPI": "LOCAL",
+    "TypeFS": "LOCAL",
+    "redirect404toIndex": false,
+    "acceptedFiles": "*.jpg|*.png|*.mp4|*.zip|*.jpeg|*.pdf|*.docx|*.xlsx|*.pptx",
+    "HSTS": false,
+    "maxRequestsPerMinutePerIP": -1,
+    "CORS": {
+        "access-control-allow-origin": "*"
+    },
+    "uploadFolder": "public/uploads/",
+    "EmailProvider": {
+        "address": "127.0.0.1",
+        "port": 25,
+        "login": null,
+        "password": null,
+        "isSSL": false
+    },
+    "globalEnv": {
+        "APPID": "task-ninja-69a87b",
+        "APIKEY": "0516c028-34d4-44e3-b221-8c47d4a77b4d"
+    },
+    "db": {
+        "MYSQL": {
+            "dump": "./DB/db.sql",
+            "database": "task_ninja_69a87b",
+            "host": "AUTO",
+            "port": "AUTO",
+            "user": "AUTO",
+            "password": "AUTO",
+            "apiToken": "AUTO",
+            "apiEndpoint": ""
+        }
+    },
+    "apiEndpoints": {
+        "/api/Authentication/createAccount": {
+            "src": "./api/Authentication/",
+            "vpath": "./api/Authentication/createAccount",
+            "realpath": "././api/Authentication/createAccount",
+            "handler": "createAccount.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "firstName": "John",
+                "lastName": "Bal",
+                "email": "konradhylton@gmail.com",
+                "phone": "873-333-3333",
+                "password": "Password123",
+                "address": "a place"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "firstName",
+                "lastName",
+                "email",
+                "phone",
+                "password",
+                "address"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 158945,
+            "lastUpdate": "2020-03-11T21:30:51.017",
+            "libs": [
+                "appdrag-cloudbackend",
+                "uuid",
+                "mailgun-js"
+            ]
+        },
+        "/api/Authentication/createAccountUsingFB": {
+            "src": "./api/Authentication/",
+            "vpath": "./api/Authentication/createAccountUsingFB",
+            "realpath": "././api/Authentication/createAccountUsingFB",
+            "handler": "createAccountUsingFB.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "email": "ekonradhssyelton@gmail.com",
+                "firstName": "FBtest",
+                "lastName": "fbTest",
+                "fbUserId": "122"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email",
+                "firstName",
+                "lastName",
+                "fbUserId"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 163563,
+            "lastUpdate": "2020-08-04T23:10:51.637",
+            "libs": [
+                "appdrag-cloudbackend",
+                "uuid",
+                "mailgun-js"
+            ]
+        },
+        "/api/Authentication/forgetPassword": {
+            "src": "./api/Authentication/",
+            "vpath": "./api/Authentication/forgetPassword",
+            "realpath": "././api/Authentication/forgetPassword",
+            "handler": "forgetPassword.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "email": "konradhylton@gmail.com"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 158946,
+            "lastUpdate": "2020-03-12T02:45:56.267",
+            "libs": [
+                "appdrag-cloudbackend",
+                "mailgun-js",
+                "password-generator"
+            ]
+        },
+        "/api/Authentication/getDetails": {
+            "src": "./api/Authentication/",
+            "vpath": "./api/Authentication/getDetails",
+            "realpath": "././api/Authentication/getDetails",
+            "handler": "getDetails.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "email": "john@gmail.com",
+                "token": "12345"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email",
+                "token"
+            ],
+            "whereConditions": [
+                {
+                    "column": "token",
+                    "type": "parameter",
+                    "value": "token",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                },
+                {
+                    "column": "email",
+                    "type": "parameter",
+                    "value": "email",
+                    "conditionOperator": "AND",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "users",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [
+                "firstName",
+                "lastName",
+                "email",
+                "phone",
+                "ninjaStatus",
+                "userId",
+                "address",
+                "ninjaId"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 158963,
+            "lastUpdate": "2020-03-12T18:01:49.217",
+            "libs": null
+        },
+        "/api/Authentication/getDetailsWithFBCredentials": {
+            "src": "./api/Authentication/",
+            "vpath": "./api/Authentication/getDetailsWithFBCredentials",
+            "realpath": "././api/Authentication/getDetailsWithFBCredentials",
+            "handler": "getDetailsWithFBCredentials.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "email": "kon_altec@hotmail.com"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email"
+            ],
+            "whereConditions": [
+                {
+                    "column": "email",
+                    "type": "parameter",
+                    "value": "email",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "users",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [
+                "firstName",
+                "lastName",
+                "email",
+                "phone",
+                "token",
+                "ninjaStatus",
+                "userId",
+                "address",
+                "ninjaId"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 163562,
+            "lastUpdate": "2020-08-04T18:54:45.937",
+            "libs": null
+        },
+        "/api/Authentication/Login": {
+            "src": "./api/Authentication/",
+            "vpath": "./api/Authentication/Login",
+            "realpath": "././api/Authentication/Login",
+            "handler": "Login.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "email": "john@gmail.com",
+                "password": "Password123"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email",
+                "password"
+            ],
+            "whereConditions": [
+                {
+                    "column": "email",
+                    "type": "parameter",
+                    "value": "email",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                },
+                {
+                    "column": "password",
+                    "type": "parameter",
+                    "value": "password",
+                    "conditionOperator": "AND",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "users",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 158943,
+            "lastUpdate": "2020-03-11T20:58:13.777",
+            "libs": null
+        },
+        "/api/users/updateUser": {
+            "src": "./api/users/",
+            "vpath": "./api/users/updateUser",
+            "realpath": "././api/users/updateUser",
+            "handler": "updateUser.handler",
+            "type": "UPDATE",
+            "lastParams": {
+                "firstName": "Kodn",
+                "lastName": "Hydl",
+                "email": "jona@gmawil.com",
+                "phone": "943-343-2323",
+                "token": "c5816128-aa95-466a-b9a2-55ea2fd40af2",
+                "password": "44talipu",
+                "profilePicture": "https://ci6.googleusercontent.com/proxy/ZGeBiElC3Y0VA24unYGvcpJEw093pftYmnMzQa38zaXmbln1yib-N0UbrJJb9amKDPpBJl3OZuN5MS4YOaVkEOgyBBj_Ju6yY0Crrfw6oc2deFwDCo0Q58xTFYECEDV_OFQsKnBXu72613EkANKFHhl2u3t1C-K1zqSpfv8mg_xs6Of0QrQcWAgAGsjOD1YMd5WywvxA9a8c0Mid9w=s0-d-e1-ft#https://p132.p1.n0.cdn.getcloudapp.com/items/04uPy40E/Jackie of all trades no background.png?v=1f4dde273c73022c43d8252fe73b50f1"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "firstName",
+                "lastName",
+                "email",
+                "phone",
+                "token",
+                "password",
+                "profilePicture"
+            ],
+            "whereConditions": [
+                {
+                    "column": "token",
+                    "type": "parameter",
+                    "value": "token",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "users",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [
+                {
+                    "column": "firstName",
+                    "type": "parameter",
+                    "value": "firstName"
+                },
+                {
+                    "column": "lastName",
+                    "type": "parameter",
+                    "value": "lastName"
+                },
+                {
+                    "column": "email",
+                    "type": "parameter",
+                    "value": "email"
+                },
+                {
+                    "column": "phone",
+                    "type": "parameter",
+                    "value": "phone"
+                },
+                {
+                    "column": "password",
+                    "type": "parameter",
+                    "value": "password"
+                },
+                {
+                    "column": "profilePicture",
+                    "type": "parameter",
+                    "value": "profilePicture"
+                },
+                {
+                    "column": "lastUpdated",
+                    "type": "formula",
+                    "value": "NOW()"
+                }
+            ],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 158964,
+            "lastUpdate": "2020-03-12T18:03:30.313",
+            "libs": null
+        },
+        "/api/users/updateUserRegistrationProcess": {
+            "src": "./api/users/",
+            "vpath": "./api/users/updateUserRegistrationProcess",
+            "realpath": "././api/users/updateUserRegistrationProcess",
+            "handler": "updateUserRegistrationProcess.handler",
+            "type": "UPDATE",
+            "lastParams": {
+                "phone": "943-343-2323",
+                "token": "c5816128-aa95-466a-b9a2-55ea2fd40af2",
+                "profilePicture": "https://ci6.googleusercontent.com/proxy/ZGeBiElC3Y0VA24unYGvcpJEw093pftYmnMzQa38zaXmbln1yib-N0UbrJJb9amKDPpBJl3OZuN5MS4YOaVkEOgyBBj_Ju6yY0Crrfw6oc2deFwDCo0Q58xTFYECEDV_OFQsKnBXu72613EkANKFHhl2u3t1C-K1zqSpfv8mg_xs6Of0QrQcWAgAGsjOD1YMd5WywvxA9a8c0Mid9w=s0-d-e1-ft#https://p132.p1.n0.cdn.getcloudapp.com/items/04uPy40E/Jackie of all trades no background.png?v=1f4dde273c73022c43d8252fe73b50f1",
+                "address": "Kingston",
+                "DOB": "april 25, 1993"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "phone",
+                "token",
+                "profilePicture",
+                "address",
+                "DOB"
+            ],
+            "whereConditions": [
+                {
+                    "column": "token",
+                    "type": "parameter",
+                    "value": "token",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "users",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [
+                {
+                    "column": "phone",
+                    "type": "parameter",
+                    "value": "phone"
+                },
+                {
+                    "column": "address",
+                    "type": "parameter",
+                    "value": "address"
+                },
+                {
+                    "column": "profilePicture",
+                    "type": "parameter",
+                    "value": "profilePicture"
+                },
+                {
+                    "column": "lastUpdated",
+                    "type": "formula",
+                    "value": "NOW()"
+                },
+                {
+                    "column": "DateOfbirth",
+                    "type": "parameter",
+                    "value": "DOB"
+                }
+            ],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 164094,
+            "lastUpdate": "2020-08-28T16:22:42.27",
+            "libs": null
+        },
+        "/api/jobs/getAllJobs": {
+            "src": "./api/jobs/",
+            "vpath": "./api/jobs/getAllJobs",
+            "realpath": "././api/jobs/getAllJobs",
+            "handler": "getAllJobs.handler",
+            "type": "SELECT",
+            "lastParams": {},
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [],
+            "whereConditions": [],
+            "tableName": "jobs",
+            "orderByDirection": "ASC,ASC,ASC",
+            "orderByColumn": "category,subcategory,name",
+            "outputColumns": [
+                "jobId",
+                "name",
+                "description",
+                "shortDescription",
+                "averagePrice",
+                "image",
+                "gallery",
+                "category",
+                "subcategory"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159079,
+            "lastUpdate": "2020-03-13T23:01:32.84",
+            "libs": null
+        },
+        "/api/jobs/getGallery": {
+            "src": "./api/jobs/",
+            "vpath": "./api/jobs/getGallery",
+            "realpath": "././api/jobs/getGallery",
+            "handler": "getGallery.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "jobId": "6663ed74-1a9a-41ce-818e-061e1e37d3fb"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "jobId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "jobId",
+                    "type": "parameter",
+                    "value": "jobId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "jobs",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [
+                "gallery"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159082,
+            "lastUpdate": "2020-03-13T23:05:13.197",
+            "libs": null
+        },
+        "/api/jobs/getParameters": {
+            "src": "./api/jobs/",
+            "vpath": "./api/jobs/getParameters",
+            "realpath": "././api/jobs/getParameters",
+            "handler": "getParameters.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "parameters": "abc123"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "parameters"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 159918,
+            "lastUpdate": "2020-04-10T05:20:59.31",
+            "libs": []
+        },
+        "/api/jobs/getSingleJob": {
+            "src": "./api/jobs/",
+            "vpath": "./api/jobs/getSingleJob",
+            "realpath": "././api/jobs/getSingleJob",
+            "handler": "getSingleJob.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "jobId": "6663ed74-1a9a-41ce-818e-061e1e37d3fb"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "jobId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "jobId",
+                    "type": "parameter",
+                    "value": "jobId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "jobs",
+            "orderByDirection": "ASC,ASC,ASC",
+            "orderByColumn": "category,subcategory,name",
+            "outputColumns": [
+                "name",
+                "description",
+                "shortDescription",
+                "averagePrice",
+                "image",
+                "gallery",
+                "category",
+                "subcategory"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159081,
+            "lastUpdate": "2020-03-13T23:03:39.85",
+            "libs": null
+        },
+        "/api/jobs/getTasksByNameCategorySubcategory": {
+            "src": "./api/jobs/",
+            "vpath": "./api/jobs/getTasksByNameCategorySubcategory",
+            "realpath": "././api/jobs/getTasksByNameCategorySubcategory",
+            "handler": "getTasksByNameCategorySubcategory.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "name": "h"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "name"
+            ],
+            "whereConditions": [
+                {
+                    "column": "name",
+                    "type": "parameter",
+                    "value": "name",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "contains"
+                },
+                {
+                    "column": "category",
+                    "type": "parameter",
+                    "value": "name",
+                    "conditionOperator": "OR",
+                    "signOperator": "contains"
+                },
+                {
+                    "column": "subcategory",
+                    "type": "parameter",
+                    "value": "name",
+                    "conditionOperator": "OR",
+                    "signOperator": "contains"
+                }
+            ],
+            "tableName": "jobs",
+            "orderByDirection": "ASC,ASC,ASC",
+            "orderByColumn": "category,subcategory,name",
+            "outputColumns": [
+                "jobId",
+                "name",
+                "description",
+                "shortDescription",
+                "averagePrice",
+                "image",
+                "gallery",
+                "category",
+                "subcategory"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159919,
+            "lastUpdate": "2020-04-10T06:01:40.35",
+            "libs": null
+        },
+        "/api/bookings/bookAndConfirm": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/bookAndConfirm",
+            "realpath": "././api/bookings/bookAndConfirm",
+            "handler": "bookAndConfirm.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "token": "15c2f399-4052-46c7-b9aa-3e128619ca28",
+                "jobId": "c6c563a2-089b-4eac-bfcc-3cf3126e16f3",
+                "date": "1234",
+                "location": "generated from test",
+                "jobDetails": "The plumbing issue has been weird for days",
+                "timeFlexibility": "likkle",
+                "dateFlexibility": "flexible",
+                "vehicleRequirments": "Car",
+                "locationDetails": "Past the old oak tree",
+                "clientSuggestedPrice": "1500",
+                "jobTime": "5:00",
+                "ninjasRequired": "2",
+                "email": "konradhylton@gmail.com",
+                "currency": "JMD",
+                "picturesOfJob": "https://p132.p1.n0.cdn.getcloudapp.com/items/rRu95Znr/Task Ninja.png?v=3aa06d77acc475b859bb1eec5da24c2c"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "token",
+                "jobId",
+                "date",
+                "location",
+                "jobDetails",
+                "timeFlexibility",
+                "dateFlexibility",
+                "vehicleRequirments",
+                "locationDetails",
+                "clientSuggestedPrice",
+                "jobTime",
+                "ninjasRequired",
+                "email",
+                "currency",
+                "picturesOfJob"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 159085,
+            "lastUpdate": "2020-03-14T14:29:50.45",
+            "libs": [
+                "appdrag-cloudbackend",
+                "uuid",
+                "nodemailer-mailgun-transport",
+                "moment"
+            ]
+        },
+        "/api/bookings/bookingsWithYourUserId": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/bookingsWithYourUserId",
+            "realpath": "././api/bookings/bookingsWithYourUserId",
+            "handler": "bookingsWithYourUserId.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "ninjaId": "194321"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "ninjaId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "ninjaId",
+                    "type": "parameter",
+                    "value": "ninjaId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "DESC",
+            "orderByColumn": "jobDate",
+            "outputColumns": [],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159625,
+            "lastUpdate": "2020-03-30T15:21:08.953",
+            "libs": null
+        },
+        "/api/bookings/clientSelectsNinja": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/clientSelectsNinja",
+            "realpath": "././api/bookings/clientSelectsNinja",
+            "handler": "clientSelectsNinja.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "ninjaId": "194321",
+                "taskId": "fb84928c-4693-4f8f-a8fb-8911bda91b09"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "ninjaId",
+                "taskId"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 160031,
+            "lastUpdate": "2020-04-13T06:01:03.657",
+            "libs": [
+                "appdrag-cloudbackend",
+                "mailgun-js"
+            ]
+        },
+        "/api/bookings/getAllBookings": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/getAllBookings",
+            "realpath": "././api/bookings/getAllBookings",
+            "handler": "getAllBookings.handler",
+            "type": "SELECT",
+            "lastParams": {},
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [],
+            "whereConditions": [],
+            "tableName": "bookings",
+            "orderByDirection": "DESC,ASC",
+            "orderByColumn": "jobDate,firstName",
+            "outputColumns": [
+                "taskId",
+                "jobId",
+                "userId",
+                "category",
+                "firstName",
+                "lastName",
+                "image",
+                "ninjaId",
+                "jobDate",
+                "jobLocation"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159097,
+            "lastUpdate": "2020-03-15T18:23:26.297",
+            "libs": null
+        },
+        "/api/bookings/getCurrentTasksWithYourUserId": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/getCurrentTasksWithYourUserId",
+            "realpath": "././api/bookings/getCurrentTasksWithYourUserId",
+            "handler": "getCurrentTasksWithYourUserId.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "userId": "05e88c88-3221-4d4f-a987-b2e36939e031"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "userId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "userId",
+                    "type": "parameter",
+                    "value": "userId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                },
+                {
+                    "column": "taskStatus",
+                    "type": "value",
+                    "value": "Completed",
+                    "conditionOperator": "AND",
+                    "signOperator": "!="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC,ASC",
+            "orderByColumn": "taskStatus,jobDate",
+            "outputColumns": [],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 160131,
+            "lastUpdate": "2020-04-17T01:41:04.443",
+            "libs": null
+        },
+        "/api/bookings/getFreeBookings": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/getFreeBookings",
+            "realpath": "././api/bookings/getFreeBookings",
+            "handler": "getFreeBookings.handler",
+            "type": "SELECT",
+            "lastParams": {},
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [],
+            "whereConditions": [
+                {
+                    "column": "ninjaId",
+                    "type": "value",
+                    "value": "null",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "is"
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "DESC,ASC",
+            "orderByColumn": "jobDate,firstName",
+            "outputColumns": [
+                "taskId",
+                "jobId",
+                "userId",
+                "category",
+                "firstName",
+                "lastName",
+                "image",
+                "ninjaId",
+                "jobCreated",
+                "jobDate",
+                "jobLocation",
+                "jobTime",
+                "picturesOfJob",
+                "jobDetails",
+                "subcategory",
+                "timeFlexibility",
+                "dateFlexibility",
+                "vehicleRequirments",
+                "locationDetails",
+                "clientSuggestedPrice",
+                "jobName",
+                "paymentMethod",
+                "currency",
+                "ninjasRequired"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159476,
+            "lastUpdate": "2020-03-24T16:57:16.27",
+            "libs": null
+        },
+        "/api/bookings/getLiveJob": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/getLiveJob",
+            "realpath": "././api/bookings/getLiveJob",
+            "handler": "getLiveJob.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "taskId": "8cfc6190-300f-4654-a99b-a0eeb9441672"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "taskId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "taskId",
+                    "type": "parameter",
+                    "value": "taskId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [
+                "taskId",
+                "category",
+                "firstName",
+                "lastName",
+                "image",
+                "ninjaFirstName",
+                "ninjaLastName",
+                "jobAccepted",
+                "jobCreated",
+                "jobDate",
+                "jobLocation",
+                "jobTime",
+                "estimatedJobCost",
+                "actualJobCost",
+                "picturesOfJob",
+                "jobDetails",
+                "taskStatus",
+                "subcategory",
+                "timeFlexibility",
+                "dateFlexibility",
+                "vehicleRequirments",
+                "locationDetails",
+                "review",
+                "rating",
+                "clientSuggestedPrice",
+                "jobName",
+                "paymentMethod",
+                "currency",
+                "ninjasRequired",
+                "ninjaAcceptanceStatus",
+                "region"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159727,
+            "lastUpdate": "2020-04-04T19:54:55.11",
+            "libs": null
+        },
+        "/api/bookings/getSingleBooking": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/getSingleBooking",
+            "realpath": "././api/bookings/getSingleBooking",
+            "handler": "getSingleBooking.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "taskId": "5047561d-7448-413e-8770-04cad32e4448"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "taskId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "taskId",
+                    "type": "parameter",
+                    "value": "taskId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [
+                "taskId",
+                "category",
+                "firstName",
+                "lastName",
+                "image",
+                "ninjaFirstName",
+                "ninjaLastName",
+                "jobAccepted",
+                "jobCreated",
+                "jobDate",
+                "jobLocation",
+                "jobTime",
+                "estimatedJobCost",
+                "actualJobCost",
+                "picturesOfJob",
+                "jobDetails",
+                "taskStatus",
+                "subcategory",
+                "timeFlexibility",
+                "dateFlexibility",
+                "vehicleRequirments",
+                "locationDetails",
+                "review",
+                "rating",
+                "clientSuggestedPrice",
+                "jobName",
+                "paymentMethod",
+                "currency",
+                "ninjaAcceptanceStatus"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159477,
+            "lastUpdate": "2020-03-24T20:54:13.92",
+            "libs": null
+        },
+        "/api/bookings/getTasksWithYourUserId": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/getTasksWithYourUserId",
+            "realpath": "././api/bookings/getTasksWithYourUserId",
+            "handler": "getTasksWithYourUserId.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "userId": "9595"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "userId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "userId",
+                    "type": "parameter",
+                    "value": "userId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159995,
+            "lastUpdate": "2020-04-11T21:32:06.15",
+            "libs": null
+        },
+        "/api/bookings/ninjaRequestsPayment": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/ninjaRequestsPayment",
+            "realpath": "././api/bookings/ninjaRequestsPayment",
+            "handler": "ninjaRequestsPayment.handler",
+            "type": "UPDATE",
+            "lastParams": {
+                "total": "500",
+                "taskId": "12345",
+                "paymentMethod": "cash"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "total",
+                "taskId",
+                "paymentMethod"
+            ],
+            "whereConditions": [
+                {
+                    "column": "taskId",
+                    "type": "parameter",
+                    "value": "taskId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [
+                {
+                    "column": "actualJobCost",
+                    "type": "parameter",
+                    "value": "total"
+                },
+                {
+                    "column": "taskStatus",
+                    "type": "value",
+                    "value": "paymentRequested"
+                },
+                {
+                    "column": "paymentMethod",
+                    "type": "parameter",
+                    "value": "total"
+                }
+            ],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 160826,
+            "lastUpdate": "2020-05-14T22:08:45.68",
+            "libs": null
+        },
+        "/api/bookings/ninjaSubmitsTotal": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/ninjaSubmitsTotal",
+            "realpath": "././api/bookings/ninjaSubmitsTotal",
+            "handler": "ninjaSubmitsTotal.handler",
+            "type": "UPDATE",
+            "lastParams": {
+                "taskId": "5047561d-7448-413e-8770-04cad32e4448",
+                "total": "400"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "taskId",
+                "total"
+            ],
+            "whereConditions": [
+                {
+                    "column": "taskId",
+                    "type": "parameter",
+                    "value": "taskId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [
+                {
+                    "column": "actualJobCost",
+                    "type": "parameter",
+                    "value": "total"
+                },
+                {
+                    "column": "taskStatus",
+                    "type": "value",
+                    "value": "paymentRequested"
+                }
+            ],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 160806,
+            "lastUpdate": "2020-05-14T00:20:23.723",
+            "libs": null
+        },
+        "/api/bookings/ninjaToBookings": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/ninjaToBookings",
+            "realpath": "././api/bookings/ninjaToBookings",
+            "handler": "ninjaToBookings.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "ninjaId": "194321",
+                "taskId": "fb84928c-4693-4f8f-a8fb-8911bda91b09"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "ninjaId",
+                "taskId"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 159538,
+            "lastUpdate": "2020-03-26T22:11:34.9",
+            "libs": [
+                "appdrag-cloudbackend",
+                "mailgun-js"
+            ]
+        },
+        "/api/bookings/ninjaUpdatesJobEmail": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/ninjaUpdatesJobEmail",
+            "realpath": "././api/bookings/ninjaUpdatesJobEmail",
+            "handler": "ninjaUpdatesJobEmail.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "taskId": "fb84928c-4693-4f8f-a8fb-8911bda91b09",
+                "updateType": "job status",
+                "update": "$500"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "taskId",
+                "updateType",
+                "update"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 160749,
+            "lastUpdate": "2020-05-11T14:10:45.787",
+            "libs": [
+                "appdrag-cloudbackend",
+                "mailgun-js"
+            ]
+        },
+        "/api/bookings/old book and confirm that shows how to format dates": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/old book and confirm that shows how to format dates",
+            "realpath": "././api/bookings/old book and confirm that shows how to format dates",
+            "handler": "old book and confirm that shows how to format dates.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "email": "john@gmail.com",
+                "token": "12345",
+                "jobId": "c6c563a2-089b-4eac-bfcc-3cf3126e16f3",
+                "date": "1234",
+                "location": "a place"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email",
+                "token",
+                "jobId",
+                "date",
+                "location"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 160650,
+            "lastUpdate": "2020-05-05T14:48:19.313",
+            "libs": [
+                "appdrag-cloudbackend",
+                "request",
+                "uuid"
+            ]
+        },
+        "/api/bookings/updateTaskAmount": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/updateTaskAmount",
+            "realpath": "././api/bookings/updateTaskAmount",
+            "handler": "updateTaskAmount.handler",
+            "type": "UPDATE",
+            "lastParams": {
+                "amount": "100",
+                "taskId": "8cfc6190-300f-4654-a99b-a0eeb9441672"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "amount",
+                "taskId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "taskId",
+                    "type": "parameter",
+                    "value": "taskId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [
+                {
+                    "column": "estimatedJobCost",
+                    "type": "parameter",
+                    "value": "amount"
+                }
+            ],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159730,
+            "lastUpdate": "2020-04-04T21:08:13.973",
+            "libs": null
+        },
+        "/api/bookings/updateTaskStatus": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/updateTaskStatus",
+            "realpath": "././api/bookings/updateTaskStatus",
+            "handler": "updateTaskStatus.handler",
+            "type": "UPDATE",
+            "lastParams": {
+                "update": "anything i want thooo",
+                "taskId": "8cfc6190-300f-4654-a99b-a0eeb9441672"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "update",
+                "taskId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "taskId",
+                    "type": "parameter",
+                    "value": "taskId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [
+                {
+                    "column": "taskStatus",
+                    "type": "parameter",
+                    "value": "update"
+                }
+            ],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 159729,
+            "lastUpdate": "2020-04-04T20:24:05.967",
+            "libs": null
+        },
+        "/api/bookings/userUpdatesTask": {
+            "src": "./api/bookings/",
+            "vpath": "./api/bookings/userUpdatesTask",
+            "realpath": "././api/bookings/userUpdatesTask",
+            "handler": "userUpdatesTask.handler",
+            "type": "UPDATE",
+            "lastParams": {
+                "userId": "9595",
+                "rating": "333",
+                "review": "I like people",
+                "taskId": "8cfc6190-300f-4654-a99b-a0eeb9441672"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "userId",
+                "rating",
+                "review",
+                "taskId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "taskId",
+                    "type": "parameter",
+                    "value": "taskId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                },
+                {
+                    "column": "userId",
+                    "type": "parameter",
+                    "value": "userId",
+                    "conditionOperator": "AND",
+                    "signOperator": "="
+                },
+                {
+                    "column": "rating",
+                    "type": "value",
+                    "value": "0",
+                    "conditionOperator": "AND",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [],
+            "mappingColumns": [
+                {
+                    "column": "rating",
+                    "type": "parameter",
+                    "value": "rating"
+                },
+                {
+                    "column": "review",
+                    "type": "parameter",
+                    "value": "review"
+                }
+            ],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 160203,
+            "lastUpdate": "2020-04-18T21:23:34.747",
+            "libs": null
+        },
+        "/api/LearningSql/Insert": {
+            "src": "./api/LearningSql/",
+            "vpath": "./api/LearningSql/Insert",
+            "realpath": "././api/LearningSql/Insert",
+            "handler": "Insert.handler",
+            "type": "nodejs12.x",
+            "lastParams": {},
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [],
+            "isPrivate": false,
+            "appdrag_function_id": 159602,
+            "lastUpdate": "2020-03-29T18:38:07.457",
+            "libs": [
+                "appdrag-cloudbackend",
+                "async"
+            ]
+        },
+        "/api/LearningSql/old book and confirm that shows you how to format dates": {
+            "src": "./api/LearningSql/",
+            "vpath": "./api/LearningSql/old book and confirm that shows you how to format dates",
+            "realpath": "././api/LearningSql/old book and confirm that shows you how to format dates",
+            "handler": "old book and confirm that shows you how to format dates.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "email": "john@gmail.com",
+                "token": "12345",
+                "jobId": "c6c563a2-089b-4eac-bfcc-3cf3126e16f3",
+                "date": "1234",
+                "location": "a place"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email",
+                "token",
+                "jobId",
+                "date",
+                "location"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 160651,
+            "lastUpdate": "2020-05-05T14:48:40.587",
+            "libs": [
+                "appdrag-cloudbackend",
+                "request",
+                "uuid"
+            ]
+        },
+        "/api/LearningSql/Testing Select": {
+            "src": "./api/LearningSql/",
+            "vpath": "./api/LearningSql/Testing Select",
+            "realpath": "././api/LearningSql/Testing Select",
+            "handler": "Testing Select.handler",
+            "type": "nodejs12.x",
+            "lastParams": {},
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [],
+            "isPrivate": false,
+            "appdrag_function_id": 159580,
+            "lastUpdate": "2020-03-28T16:59:31.09",
+            "libs": [
+                "appdrag-cloudbackend"
+            ]
+        },
+        "/api/Depricated/find job category by booking id": {
+            "src": "./api/Depricated/",
+            "vpath": "./api/Depricated/find job category by booking id",
+            "realpath": "././api/Depricated/find job category by booking id",
+            "handler": "find job category by booking id.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "bookingId": "1"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "bookingId"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 159441,
+            "lastUpdate": "2020-03-23T22:14:09.11",
+            "libs": [
+                "appdrag-cloudbackend"
+            ]
+        },
+        "/api/Depricated/forgetPasswordNodemailer": {
+            "src": "./api/Depricated/",
+            "vpath": "./api/Depricated/forgetPasswordNodemailer",
+            "realpath": "././api/Depricated/forgetPasswordNodemailer",
+            "handler": "forgetPasswordNodemailer.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "email": "john@gmail.com"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 159078,
+            "lastUpdate": "2020-03-13T19:31:46.207",
+            "libs": [
+                "appdrag-cloudbackend",
+                "nodemailer"
+            ]
+        },
+        "/api/Depricated/getTaskAsNinja": {
+            "src": "./api/Depricated/",
+            "vpath": "./api/Depricated/getTaskAsNinja",
+            "realpath": "././api/Depricated/getTaskAsNinja",
+            "handler": "getTaskAsNinja.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "ninjaId": "9e57b2e0-357b-48a8-abd4-811cab46e96d",
+                "taskId": "12"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "ninjaId",
+                "taskId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "taskId",
+                    "type": "parameter",
+                    "value": "taskId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                },
+                {
+                    "column": "ninjaId",
+                    "type": "parameter",
+                    "value": "ninjaId",
+                    "conditionOperator": "AND",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "bookings",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [
+                "category",
+                "firstName",
+                "lastName",
+                "image",
+                "ninjaFName",
+                "ninjaLName",
+                "jobAccepted",
+                "jobCreated",
+                "jobDate",
+                "jobLocation",
+                "jobTime"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 160202,
+            "lastUpdate": "2020-04-18T21:08:01.213",
+            "libs": null
+        },
+        "/api/ninjas/findNinjaAverageRating": {
+            "src": "./api/ninjas/",
+            "vpath": "./api/ninjas/findNinjaAverageRating",
+            "realpath": "././api/ninjas/findNinjaAverageRating",
+            "handler": "findNinjaAverageRating.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "ninjaId": "194321"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "ninjaId"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 160199,
+            "lastUpdate": "2020-04-18T19:50:28.52",
+            "libs": [
+                "appdrag-cloudbackend"
+            ]
+        },
+        "/api/ninjas/getNinjaBasedOnCategorySubcategory": {
+            "src": "./api/ninjas/",
+            "vpath": "./api/ninjas/getNinjaBasedOnCategorySubcategory",
+            "realpath": "././api/ninjas/getNinjaBasedOnCategorySubcategory",
+            "handler": "getNinjaBasedOnCategorySubcategory.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "subcategory": "heavy",
+                "category": "Cleaning"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "subcategory",
+                "category"
+            ],
+            "whereConditions": [
+                {
+                    "column": "categories",
+                    "type": "parameter",
+                    "value": "category",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "contains"
+                },
+                {
+                    "column": "ninjaStatus",
+                    "type": "value",
+                    "value": "1",
+                    "conditionOperator": "AND",
+                    "signOperator": "="
+                },
+                {
+                    "column": "subcategories",
+                    "type": "parameter",
+                    "value": "subcategory",
+                    "conditionOperator": "OR",
+                    "signOperator": "contains"
+                },
+                {
+                    "column": "ninjaStatus",
+                    "type": "value",
+                    "value": "1",
+                    "conditionOperator": "AND",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "users",
+            "orderByDirection": "ASC",
+            "orderByColumn": "firstName",
+            "outputColumns": [],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 160028,
+            "lastUpdate": "2020-04-12T21:14:42.413",
+            "libs": null
+        },
+        "/api/ninjas/getNinjaDetails": {
+            "src": "./api/ninjas/",
+            "vpath": "./api/ninjas/getNinjaDetails",
+            "realpath": "././api/ninjas/getNinjaDetails",
+            "handler": "getNinjaDetails.handler",
+            "type": "SELECT",
+            "lastParams": {
+                "ninjaId": "123456"
+            },
+            "method": "GET",
+            "output": "JSON",
+            "parametersList": [
+                "ninjaId"
+            ],
+            "whereConditions": [
+                {
+                    "column": "ninjaId",
+                    "type": "parameter",
+                    "value": "ninjaId",
+                    "conditionOperator": "WHERE",
+                    "signOperator": "="
+                }
+            ],
+            "tableName": "users",
+            "orderByDirection": "ASC",
+            "orderByColumn": "id",
+            "outputColumns": [
+                "firstName",
+                "lastName",
+                "email",
+                "phone",
+                "profilePicture",
+                "lastUpdated",
+                "workSamples",
+                "createdAt",
+                "lastLogin",
+                "categories",
+                "subcategories",
+                "ninjaDescription",
+                "jobsDoneAsNinja",
+                "hasPoliceReport",
+                "qualifications",
+                "regions",
+                "defaultCurrency",
+                "ninjaHourlyRate",
+                "hook",
+                "vehicleAccess"
+            ],
+            "mappingColumns": [],
+            "sourceCode": "",
+            "isPrivate": false,
+            "appdrag_function_id": 160201,
+            "lastUpdate": "2020-04-18T20:19:30.397",
+            "libs": null
+        },
+        "/api/emails/emailTemplateWithHXMailgunHeader": {
+            "src": "./api/emails/",
+            "vpath": "./api/emails/emailTemplateWithHXMailgunHeader",
+            "realpath": "././api/emails/emailTemplateWithHXMailgunHeader",
+            "handler": "emailTemplateWithHXMailgunHeader.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "email": "konradhylton@gmail.com"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 160720,
+            "lastUpdate": "2020-05-09T15:51:31.83",
+            "libs": [
+                "appdrag-cloudbackend",
+                "mailgun-js"
+            ]
+        },
+        "/api/emails/emailTemplateWithRegularHeader": {
+            "src": "./api/emails/",
+            "vpath": "./api/emails/emailTemplateWithRegularHeader",
+            "realpath": "././api/emails/emailTemplateWithRegularHeader",
+            "handler": "emailTemplateWithRegularHeader.handler",
+            "type": "nodejs12.x",
+            "lastParams": {
+                "email": "konradhylton@gmail.com"
+            },
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [
+                "email"
+            ],
+            "isPrivate": false,
+            "appdrag_function_id": 160738,
+            "lastUpdate": "2020-05-10T21:52:39.71",
+            "libs": [
+                "appdrag-cloudbackend",
+                "mailgun-js"
+            ]
+        },
+        "/api/emails/testEmail": {
+            "src": "./api/emails/",
+            "vpath": "./api/emails/testEmail",
+            "realpath": "././api/emails/testEmail",
+            "handler": "testEmail.handler",
+            "type": "nodejs12.x",
+            "lastParams": {},
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [],
+            "isPrivate": false,
+            "appdrag_function_id": 160719,
+            "lastUpdate": "2020-05-09T11:56:05.887",
+            "libs": [
+                "appdrag-cloudbackend",
+                "mailgun-js"
+            ]
+        },
+        "/api/websockets/websocket": {
+            "src": "./api/websockets/",
+            "vpath": "./api/websockets/websocket",
+            "realpath": "././api/websockets/websocket",
+            "handler": "websocket.handler",
+            "type": "nodejs12.x",
+            "lastParams": {},
+            "method": "GET",
+            "output": "GATEWAY",
+            "parametersList": [],
+            "isPrivate": false,
+            "appdrag_function_id": 160789,
+            "lastUpdate": "2020-05-12T18:14:55.503",
+            "libs": [
+                "express",
+                "socket.io",
+                "http",
+                "socket.io-client"
+            ]
+        },
+        "/api/Payments/acceptingStripe": {
+            "src": "./api/Payments/",
+            "vpath": "./api/Payments/acceptingStripe",
+            "realpath": "././api/Payments/acceptingStripe",
+            "handler": "acceptingStripe.handler",
+            "type": "nodejs12.x",
+            "lastParams": {},
+            "method": "POST",
+            "output": "JSON",
+            "parametersList": [],
+            "isPrivate": false,
+            "appdrag_function_id": 160809,
+            "lastUpdate": "2020-05-14T04:46:37.737",
+            "libs": []
+        }
+    }
+}

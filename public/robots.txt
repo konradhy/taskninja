@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: https://www.taskninjaservices.com/sitemap.xml
+Sitemap: https://www.taskninjaservices.com/sitemap-blog.xml
+Sitemap: https://www.taskninjaservices.com/sitemap-shop.xml

@@ -1,0 +1,1 @@
+SELECT * FROM bookings WHERE `ninjaId` = '@PARAM_ninjaId' ORDER BY `jobDate`

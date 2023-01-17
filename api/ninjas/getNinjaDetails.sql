@@ -1,0 +1,1 @@
+SELECT firstName,lastName,email,phone,profilePicture,lastUpdated,workSamples,createdAt,lastLogin,categories,subcategories,ninjaDescription,jobsDoneAsNinja,hasPoliceReport,qualifications,regions,defaultCurrency,ninjaHourlyRate,hook,vehicleAccess FROM users WHERE `ninjaId` = '@PARAM_ninjaId' ORDER BY `id`

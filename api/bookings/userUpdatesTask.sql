@@ -1,0 +1,1 @@
+UPDATE bookings SET `rating`='' ,`review`=''  WHERE `taskId` =taskId AND `userId` =userId AND `rating` =0

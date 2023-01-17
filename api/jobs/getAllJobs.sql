@@ -1,0 +1,1 @@
+SELECT jobId,name,description,shortDescription,averagePrice,image,gallery,category,subcategory FROM jobs ORDER BY `category`, `subcategory`, `name`

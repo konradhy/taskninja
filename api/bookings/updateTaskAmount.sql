@@ -1,0 +1,1 @@
+UPDATE bookings SET `estimatedJobCost`=''  WHERE `taskId` =taskId

@@ -1,0 +1,1 @@
+SELECT * FROM bookings WHERE `userId` = '@PARAM_userId' AND `taskStatus` != 'Completed' ORDER BY `taskStatus`, `jobDate`

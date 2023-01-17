@@ -1,0 +1,1 @@
+SELECT name,description,shortDescription,averagePrice,image,gallery,category,subcategory FROM jobs WHERE `jobId` = '@PARAM_jobId' ORDER BY `category`, `subcategory`, `name`

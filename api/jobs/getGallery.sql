@@ -1,0 +1,1 @@
+SELECT gallery FROM jobs WHERE `jobId` = '@PARAM_jobId' ORDER BY `id`

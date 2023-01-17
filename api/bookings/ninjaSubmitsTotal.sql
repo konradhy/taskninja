@@ -1,0 +1,1 @@
+UPDATE bookings SET `actualJobCost`='' ,`taskStatus`='paymentRequested'  WHERE `taskId` =taskId

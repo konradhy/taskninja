@@ -1,0 +1,1 @@
+SELECT taskId,jobId,userId,category,firstName,lastName,image,ninjaId,jobCreated,jobDate,jobLocation,jobTime,picturesOfJob,jobDetails,subcategory,timeFlexibility,dateFlexibility,vehicleRequirments,locationDetails,clientSuggestedPrice,jobName,paymentMethod,currency,ninjasRequired FROM bookings WHERE `ninjaId` IS 'null' ORDER BY `jobDate`, `firstName`

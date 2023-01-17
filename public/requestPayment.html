@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="./config/index.jpg?escape=1599523258840">
+    <meta class="appdrag-og-image-width-and-height" property="og:image:width" content="450">
+    <meta class="appdrag-og-image-width-and-height" property="og:image:height" content="236">
+    <meta name="datasource" datasource-function="bookings/getLiveJob" datasource-id="1" datasource-404="0">
+    <meta class="appdrag-theme-topbar-color" name="theme-color" content="#2196f3">
+    <meta class="appdrag-theme-topbar-color" name="msapplication-navbutton-color" content="#2196f3">
+    <meta class="appdrag-theme-topbar-color" name="apple-mobile-web-app-status-bar-style" content="#2196f3">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/appallin-universal-theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/appdrag.css">
+    <link rel="stylesheet" crossorigin="anonymous" id="appdrag-palette" type="text/css" href="./css/appdrag-palette.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/fonts.css">
+  </head>
+  <body appid="task-ninja-69a87b" style="overflow-x:hidden" class="drawer-close drawer drawer--left">
+    <div class="lightbox-target" id="lightbox-target">
+      <img src="" class="lightbox-image">
+      <div class="lightbox-nav">
+        <span class="lightbox-prev"><i class="fa fa-arrow-left"></i></span><span class="lightbox-next"><i class="fa fa-arrow-right"></i></span>
+      </div>
+      <div class="lightbox-caption">
+      </div>
+      <span class="lightbox-close"></span>
+    </div>
+    <header class="drawer-header" role="banner">
+      <div type="button" class="drawer-hamburger drawer-toggle appdrag-palette-background-color-dark-primary-color" style="color:#2e2e2e">
+        <div class="drawer-topbar" style="font-size:29px;font-family:Oswald">
+          <div class="appdrag-logo-container dynamic-sized-element appdrag-logo-image" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" style="line-height:normal;margin:0 !important;padding:0 !important" padding-tablet-top="5" padding-tablet-bottom="0">
+            <div class="appdrag-image">
+              <img src="//s3-eu-west-1.amazonaws.com/appdrag.com/AppDrag-125-black.png" style="margin:0 auto;float:left;background-position:center center;background-size:cover;background-repeat:no-repeat" class="img img-responsive" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+            </div>
+            <div class="appdrag-element text-logo" style="position:relative;margin-top:0;padding:0 !important">
+              <span style="font-size:22px"><span style="letter-spacing:.1em"><span style="font-family:roboto"><span class="appdrag-palette-color-text-color" ck-color-back="text-color">APPDRAG</span></span></span></span>
+            </div>
+          </div>
+        </div>
+        <span class="sr-only">toggle navigation</span> <span class="drawer-hamburger-icon" style="background-color:#2e2e2e"></span>
+      </div>
+      <nav class="drawer-nav appdrag-palette-background-color-dark-primary-color" role="navigation" style="color:#2e2e2e;touch-action:none;display:none">
+        <ul class="drawer-menu" style="transition-timing-function:cubic-bezier(.1,.57,.1,1);transition-duration:0ms;transform:translate(0,0) translateZ(0)">
+          <li>
+            <a class="drawer-menu-item" href="index.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">Home</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Client-Area.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">Client Dashboard</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item drawer-child" href="updateUserProfile.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:25px !important">Update Profile</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Jobs.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">Tasks</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="ninja_home_page.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">Ninja Dashboard</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item drawer-child" href="Bookings.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:25px !important">Available Jobs</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Login.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">Login</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item drawer-child" href="Register.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:25px !important">Register</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="onboarding.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">onboarding</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Swag.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">Swag</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="Contact.html" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">Contact</a>
+          </li>
+          <li>
+            <a class="drawer-menu-item" href="test?email=[DS1=email]" style="color:#2e2e2e;font-size:18px;font-weight:lighter;letter-spacing:.35em;text-transform:none;font-family:Roboto;border-bottom-color:#e6e6e6;padding-left:10px !important">test page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" class="drawer-container t-gutter">
+      <div class="section-container" style="top:0">
+        <section class="appallin-universal-section appallin-universal-navbar appallin-universal-navbar-dark hidden-sm hidden-xs appdrag-palette-background-color-primary-color small-height" style="padding-top:0;padding-bottom:0;background-color:#fff;background-size:cover;background-position:center center;background-repeat:no-repeat" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" video-background-poster="" video-background-path="" id="ui-id-1" category="Headers / Footers" market-id="3699362" owner-id="4">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="15" padding-desktop-right="15">
+                <div class="appdrag-logo-container dynamic-sized-element appdrag-logo-image" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" style="padding:0 !important;margin:0 !important">
+                  <div class="appdrag-element text-logo" style="position:relative;text-align:left !important;padding:0 !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+                    <span style="font-size:25px"><span style="letter-spacing:.1em"><span style="font-family:roboto"><span class="appdrag-palette-color-text-color" ck-color-back="text-color">APPDRAG</span></span></span></span> <span style="font-family:quicksand"></span>
+                  </div>
+                  <div class="appdrag-image" link-target="none">
+                    <img style="height:40px;background-color:rgba(0,0,0,0);margin:0 auto;background-position:center center;background-size:cover;background-repeat:no-repeat" class="img img-responsive appallin-universal-background-zoom" video-background-poster="" video-background-path="" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" disabled-src="//s3-eu-west-1.amazonaws.com/appdrag.com/AppDrag-125-black.png" src="./uploads/1589113154480-Task-Ninja.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 dynamic-sized-element appdrag-palette-border-top-color-divider-color" style="border-top:1px solid #e8e8e8;padding:35px 15px !important;margin:0 !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="35" padding-desktop-bottom="35" padding-desktop-left="15" padding-desktop-right="15">
+                <div class="appdrag-menu navbar" role="navigation" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+                  <div class="collapse navbar-collapse appallin-generated-navbar appdrag-menu-disable-last-right-border centered-menu" background="rgba(0,0,0,0)" font-size="16" font-family="Raleway" font-color="text-color" hover-font-color="primary-color" hover-buttons-background="rgba(0,0,0,0)" buttons-border-top-width="0" buttons-border-top-color="transparent" buttons-border-top-style="none" buttons-border-bottom-width="0" buttons-border-bottom-color="transparent" buttons-border-bottom-style="none" buttons-border-right-width="0" buttons-border-right-color="transparent" buttons-border-right-style="none" buttons-border-left-width="0" buttons-border-left-color="transparent" buttons-border-left-style="none" buttons-padding-top="0" buttons-padding-left="25" buttons-padding-right="25" buttons-padding-bottom="0" buttons-text-align="right" display-caret="false" sublevel-background="rgba(240,240,240,1)" border-hover-bottom-width="3px" border-hover-bottom-color="rgba(252,120,165,1)" border-hover-bottom-style="solid" border-hover-top-width="2px" border-hover-top-color="rgba(240,67,67,1)" border-hover-top-style="none" border-hover-left-width="2px" border-hover-left-color="rgba(240,67,67,1)" border-hover-left-style="none" border-hover-right-width="2px" border-hover-right-color="rgba(209,206,206,1)" border-hover-right-style="none" border-top-width="px" border-top-color="" border-top-style="none" border-left-width="2px" border-left-color="rgba(130,55,55,1)" border-left-style="none" border-right-width="1px" border-right-color="rgba(209,209,209,1)" border-right-style="solid" border-bottom-width="px" border-bottom-color="" border-bottom-style="none" topbar-background-color="dark-primary-color" topbar-drawer-border-color="rgba(230,230,230,1)" topbar-topbar-text-color="text-color" topbar-drawer-text-color="rgba(46,46,46,1)" topbar-topbar-font-size="29" topbar-drawer-font-size="18" topbar-topbar-font-family="Oswald" topbar-drawer-font-family="Roboto" topbar-topbar-font-weight="" topbar-drawer-font-weight="lighter" topbar-logo="" drawer-logo="http://appdrag.com.s3-eu-west-1.amazonaws.com/AppDrag-250-black.png" topbar-title="Appdrag" topbar-logo-type="none" logo-right-space="20" logo-left-space="5" logo-top-space="13" logo-bottom-space="14" font-weight="bold" logo-height="62" menu-position="center" logo-position="left" logo-width="120" transparent="false" letter-spacing="0" topbar-drawer-letter-spacing="35" text-transform="uppercase">
+                    <li class="appallin-menu-single-item">
+                      <a href="" class="appallin-menu-single-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-single-item-title">Single item</span></a>
+                    </li>
+                    <li class="appallin-menu-container-item">
+                      <a href="" class="appallin-menu-container-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-container-item-title">Container</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                      <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#f0f0f0">
+                      </ul>
+                    </li>
+                    <ul class="nav navbar-nav appallin-generated-menu noselect" style="background-color:transparent">
+                      <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#d1d1d1">
+                        <a href="./" class="appallin-menu-container-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-container-item-title">Home</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                        <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#f0f0f0">
+                        </ul>
+                      </li>
+                      <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#d1d1d1">
+                        <a href="Client-Area.html" class="appallin-menu-container-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-container-item-title">Client Dashboard</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                        <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#f0f0f0">
+                          <li class="appallin-menu-single" style="border-style:none;border-width:initial;border-color:initial;margin-right:0">
+                            <a href="updateUserProfile.html" class="appallin-menu-single-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:5px;text-align:initial;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-single-item-title">Update Profile</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#d1d1d1">
+                        <a href="Jobs.html" class="appallin-menu-container-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-container-item-title">Tasks</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                        <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#f0f0f0">
+                        </ul>
+                      </li>
+                      <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#d1d1d1">
+                        <a href="ninja_home_page.html" class="appallin-menu-container-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-container-item-title">Ninja Dashboard</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                        <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#f0f0f0">
+                          <li class="appallin-menu-single" style="border-style:none;border-width:initial;border-color:initial;margin-right:0">
+                            <a href="Bookings.html" class="appallin-menu-single-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:5px;text-align:initial;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-single-item-title">Available Jobs</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="appallin-menu-container" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#d1d1d1">
+                        <a href="Login.html" class="appallin-menu-container-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-container-item-title">Login</span> <i class="fa fa-caret-down appallin-menu-container-caret" data-toggle="dropdown" style="display:none"></i></a>
+                        <ul class="appallin-menu-sublevel dropdown-menu" style="background-color:#f0f0f0">
+                          <li class="appallin-menu-single" style="border-style:none;border-width:initial;border-color:initial;margin-right:0">
+                            <a href="Register.html" class="appallin-menu-single-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:5px;text-align:initial;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-single-item-title">Register</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="appallin-menu-single" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#d1d1d1">
+                        <a href="onboarding.html" class="appallin-menu-single-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-single-item-title">onboarding</span></a>
+                      </li>
+                      <li class="appallin-menu-single" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#d1d1d1">
+                        <a href="Swag.html" class="appallin-menu-single-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-single-item-title">Swag</span></a>
+                      </li>
+                      <li class="appallin-menu-single" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;margin-right:0;border-right-color:#d1d1d1">
+                        <a href="Contact.html" class="appallin-menu-single-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-single-item-title">Contact</span></a>
+                      </li>
+                      <li class="appallin-menu-single" style="border-style:none solid none none;border-left-width:2px;border-left-color:#823737;border-right-width:1px;border-right-color:#d1d1d1">
+                        <a href="test?email=[DS1=email]" class="appallin-menu-single-item-link appdrag-palette-color-text-color appdrag-palette-color-hover-primary-color" style="background-color:rgba(0,0,0,0);font-size:16px;font-weight:bold;padding:0 25px;text-align:left;letter-spacing:0;font-family:Raleway;text-transform:uppercase"><span class="appallin-menu-single-item-title">test page</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="appallin-universal-section au-pt-20 dynamic-sized-element" style="background-attachment:fixed;background-color:rgba(0,0,0,0);background-size:cover;background-position:center center;background-repeat:no-repeat;margin:0 !important;padding:50px 0 202px !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="50" padding-desktop-bottom="202" padding-desktop-left="0" padding-desktop-right="0" video-background-poster="" video-background-path="" id="ui-id-194" market-id="3698873" owner-id="25" category="Hero">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12" style="margin-top:0 !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 15px !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="15" padding-desktop-right="15">
+                <p style="position:relative;text-align:left !important" market-id="3700137" owner-id="4">
+                  <strong>Client's Original Suggested Price</strong>: $<span class="Light">[DS1=clientSuggestedPrice]</span>
+                  <br>
+                   <strong>Your Estimated Price</strong>:<span class="Light"> $[DS1=estimatedJobCost]</span>
+                </p>
+                <div class="appdrag-element appdrag-field translatable-attrs" type="radio" style="font-size:14px;text-align:center;margin-bottom:20px !important;margin-top:20px !important" margin-desktop-bottom="20" margin-desktop-top="20" spacing="9" inner-color="rgba(105,105,104,1)" inner-id="dfk1fg1p1z8" border-color="rgba(179,179,179,1)" border-id="dfk1fg1f223" field-border-radius="13" field-border-radius-id="dfk1fg172l4" field-name="paymentType" field-error-validation="" translatable-attrs="field-error-validation" category="Cloud Backend Inputs" market-id="3699906" owner-id="4">
+                  <div class="appdrag-field-elem" style="margin-right:9px" value="">
+                    <input type="radio" name="paymentType" value="cash" checked="checked">
+                    <label>Cash</label>
+                  </div>
+                  <div class="appdrag-field-elem" style="margin-right:9px">
+                    <input type="radio" name="paymentType" value="paypal">
+                    <label>Paypal</label>
+                  </div>
+                  <div class="appdrag-field-elem" style="margin-right:9px" value="" checked="checked">
+                    <input type="radio" name="paymentType" value="debitCard">
+                    <label>Debit Card</label>
+                  </div>
+                  <style class="field-border-radius">
+                    .appdrag-element[field-border-radius-id='dfk1fg172l4'] .appdrag-field-elem label:before{border-radius:13px}.appdrag-element[field-border-radius-id='dfk1fg172l4'] .appdrag-field-elem label:after{border-radius:13px}
+                  </style>
+                  <style class="border-color">
+                    .appdrag-element[border-id='dfk1fg1f223'] .appdrag-field-elem label:before{border-color:rgba(179,179,179,1)}
+                  </style>
+                  <style class="inner-color">
+                    .appdrag-element[inner-id='dfk1fg1p1z8'] .appdrag-field-elem input:checked~label:after{background-color:rgba(105,105,104,1)}
+                  </style>
+                  <div class="appdrag-field-elem" style="margin-right:9px">
+                    <input type="radio" name="paymentType" value="creditCard">
+                    <label>Credit Card</label>
+                  </div>
+                </div>
+                <div class="appdrag-embed" cursor-pos="140" embed-title="Edit HTML Code" category="Source Code" market-id="3699549" owner-id="1">
+                  <meta charset="utf-8">
+                  <title>
+                    Invoice
+                  </title>
+                  <link rel="stylesheet" href="style.css">
+                  <script src="script.js" appdrag-embed="true">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  </script>
+                  <div class="custom">
+                    <header>
+                      <h1>
+                        Generated Invoice
+                      </h1>
+                      <address contenteditable="">
+                        <p>
+                          [DS1=firstName] [DS1=lastName]
+                        </p>
+                        <p>
+                          Address:
+                        </p>
+                        <p>
+                          Phone Number:
+                        </p>
+                      </address>
+                      <span><img alt="" src="https://p132.p1.n0.cdn.getcloudapp.com/items/rRu95Znr/Task%20Ninja.png?v=3bad6f72ff3f17b7d5f22d097affc293">
+                        <input type="file" accept="image/*">
+                      </span>
+                    </header>
+                    <article>
+                      <h1>
+                        Recipient
+                      </h1>
+                      <address contenteditable="">
+                        <p>
+                          [DS1=ninjaFirstName] [DS1=ninjaLastName]
+                        </p>
+                      </address>
+                      <table class="meta border">
+                        <tbody>
+                          <tr>
+                            <th class="border">
+                              <span contenteditable="">Task #</span>
+                            </th>
+                            <td class="border">
+                              <span contenteditable="">[DS1=taskId]</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="border">
+                              <span contenteditable="">Date</span>
+                            </th>
+                            <td class="border">
+                              <span contenteditable="">Enter Today's date</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="border">
+                              <span contenteditable="">Amount Due</span>
+                            </th>
+                            <td class="border">
+                              <span id="prefix" contenteditable="">$</span><span>600.00</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="inventory border">
+                        <thead>
+                          <tr>
+                            <th class="border">
+                              <span contenteditable="">Item</span>
+                            </th>
+                            <th class="border">
+                              <span contenteditable="">Description</span>
+                            </th>
+                            <th class="border">
+                              <span contenteditable="">Rate</span>
+                            </th>
+                            <th class="border">
+                              <span contenteditable="">Quantity</span>
+                            </th>
+                            <th class="border">
+                              <span contenteditable="">Price</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="border">
+                              <a class="cut">-</a><span contenteditable="">[DS1=category]</span>
+                            </td>
+                            <td class="border">
+                              <span contenteditable="">[DS1=jobName]</span>
+                            </td>
+                            <td class="border">
+                              <span data-prefix="">$</span><span contenteditable="">[DS1=estimatedJobCost]</span>
+                            </td>
+                            <td class="border">
+                              <span contenteditable="">1</span>
+                            </td>
+                            <td class="border">
+                              <span data-prefix="">$</span><span></span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a class="add">+</a>
+                      <table class="balance">
+                        <tbody>
+                          <tr>
+                            <th class="border">
+                               <span id="total" contenteditable="">Total</span>
+                            </th>
+                            <td class="border">
+                              <span data-prefix="">$</span><span>600.00</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="border">
+                              <span contenteditable="">Amount Paid</span>
+                            </th>
+                            <td class="border">
+                              <span data-prefix="">$</span><span contenteditable="">0.00</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="border">
+                              <span contenteditable="">Balance Due</span>
+                            </th>
+                            <td class="border">
+                              <span data-prefix="">$</span><span>600.00</span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </article>
+                    <aside>
+                      <h1>
+                        <span contenteditable="">Additional Notes</span>
+                      </h1>
+                      <div contenteditable="">
+                        <p>
+                          Put extra notes here. You can enter as many items as you need. The invoice will update automatically.
+                        </p>
+                      </div>
+                    </aside>
+                  </div>
+                </div>
+                <div class="appdrag-embed" cursor-pos="116" embed-title="Edit CSS Code" category="Source Code" market-id="3699548" owner-id="1">
+                  <style>
+                    /* reset */
+    
+    .custom {
+        background-color: rgba(219, 215, 215, 0.27);
+        box-shadow: rgb(100, 100, 100) 1px 2px 10px 0px;
+        padding: 20px;
+    }
+    
+    * {
+        border: 0;
+        color: inherit;
+        box-sizing: content-box;
+        font-family: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        vertical-align: top;
+    }
+    
+
+    /* content editable */
+    
+    *[contenteditable] {
+        border-radius: 0.25em;
+        min-width: 1em;
+        outline: 0;
+    }
+    
+    *[contenteditable] {
+        cursor: pointer;
+    }
+    
+    *[contenteditable]:hover,
+    *[contenteditable]:focus,
+    td:hover *[contenteditable],
+    td:focus *[contenteditable],
+    img.hover {
+        background: #DEF;
+        box-shadow: 0 0 1em 0.5em #DEF;
+    }
+    
+    span[contenteditable] {
+        display: inline-block;
+    }
+    /* heading */
+    
+    h1 {
+        font: bold 100% sans-serif;
+        letter-spacing: 0.5em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    /* table */
+    
+    table {
+        font-size: 75%;
+        table-layout: fixed;
+        width: 100%;
+    }
+    
+    th,
+    td {
+        border-width: 1px;
+        padding: 0.5em;
+        position: relative;
+        text-align: left;
+    }
+    
+    th,
+    td {
+        border-radius: 0.25em;
+        border-style: solid;
+    }
+    
+    th {
+        background: #EEE;
+        border-color: #BBB;
+    }
+    
+    td {
+        border-color: #DDD;
+    }
+    /* page */
+    
+    html {
+        font: 16px/1 'Open Sans', sans-serif;
+        overflow: auto;
+    }
+    
+    html {
+        background: #999;
+        cursor: default;
+    }
+}
+body {
+    height: 11in;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* header */
+header {
+    margin: 0 0 3em;
+}
+header:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+header h1 {
+    background: #1976d2;
+    border-radius: 0.25em;
+    color: #FFF;
+    margin: 0 0 1em;
+    padding: 0.5em 0;
+}
+header address {
+    float: left;
+    font-size: 75%;
+    font-style: normal;
+    line-height: 1.25;
+    margin: 0 1em 1em 0;
+}
+header address p {
+    margin: 0 0 0.25em;
+}
+header span,
+header img {
+    display: block;
+    margin-left: auto;
+    width: 50%;
+}
+header span {
+    margin: 0 0 1em 1em;
+    max-height: 25%;
+    max-width: 60%;
+    position: relative;
+}
+header img {
+    max-height: 100%;
+    max-width: 100%;
+}
+header input {
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* article */
+article,
+article address,
+table.meta,
+table.inventory {
+    margin: 0 0 3em;
+}
+article:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+article h1 {
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+article address {
+    float: left;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+/* table meta & balance */
+table.meta,
+table.balance {
+    float: right;
+    width: 36%;
+}
+table.meta:after,
+table.balance:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* table meta */
+table.meta th {
+    width: 40%;
+}
+table.meta td {
+    width: 60%;
+}
+
+/* table items */
+table.inventory {
+    clear: both;
+    width: 100%;
+}
+table.inventory th {
+    font-weight: bold;
+    text-align: center;
+}
+table.inventory td:nth-child(1) {
+    width: 26%;
+}
+table.inventory td:nth-child(2) {
+    width: 38%;
+}
+table.inventory td:nth-child(3) {
+    text-align: right;
+    width: 12%;
+}
+table.inventory td:nth-child(4) {
+    text-align: right;
+    width: 12%;
+}
+table.inventory td:nth-child(5) {
+    text-align: right;
+    width: 12%;
+}
+
+/* table balance */
+table.balance th,
+table.balance td {
+    width: 50%;
+}
+table.balance td {
+    text-align: right;
+}
+
+/* aside */
+aside h1 {
+    border: none;
+    border-width: 0 0 1px;
+    margin: 0 0 1em;
+}
+aside h1 {
+    border-color: #999;
+    border-bottom-style: solid;
+}
+
+/* javascript */
+.add,
+.cut {
+    border-width: 1px;
+    display: block;
+    font-size: .8rem;
+    padding: 0.25em 0.5em;
+    float: left;
+    text-align: center;
+    width: 0.6em;
+}
+.add,
+.cut {
+    background: #9AF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: -moz-linear-gradient(#00ADEE 5%, #0078A5 100%);
+    background-image: -webkit-linear-gradient(#00ADEE 5%, #0078A5 100%);
+    border-radius: 0.5em;
+    border-color: #0076A3;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.333);
+}
+.add {
+    margin: -2.5em 0 0;
+}
+.add:hover {
+    background: #00ADEE;
+}
+.cut {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+}
+.cut {
+    -webkit-transition: opacity 100ms ease-in;
+}
+tr:hover .cut {
+    opacity: 1;
+}
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+    
+    html {
+        background: none;
+        padding: 0;
+    }
+    
+    body {
+        box-shadow: none;
+        margin: 0;
+    }
+    
+    span:empty {
+        display: none;
+    }
+    
+    .add,
+    .cut {
+        display: none;
+    }
+}
+@page {
+    margin: 0;
+}
+                  </style>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="appdrag-embed" cursor-pos="239" embed-title="Edit Javascript Code" category="Source Code" market-id="3699547" owner-id="1">
+                  <script appdrag-embed="true">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+    /* Shivving (IE8 is not supported, but at least it won't look as awful)
+/* ========================================================================== */
+
+(function (document) {
+	var
+	head = document.head = document.getElementsByTagName('head')[0] || document.documentElement,
+	elements = 'article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output picture progress section summary time video x'.split(' '),
+	elementsLength = elements.length,
+	elementsIndex = 0,
+	element;
+
+	while (elementsIndex < elementsLength) {
+		element = document.createElement(elements[++elementsIndex]);
+	}
+
+	element.innerHTML = 'x<style>' +
+		'article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}' +
+		'audio[controls],canvas,video{display:inline-block}' +
+		'[hidden],audio{display:none}' +
+		'mark{background:#FF0;color:#000}' +
+	'</style>';
+
+	return head.insertBefore(element.lastChild, head.firstChild);
+})(document);
+
+/* Prototyping
+/* ========================================================================== */
+
+(function (window, ElementPrototype, ArrayPrototype, polyfill) {
+	function NodeList() { [polyfill] }
+	NodeList.prototype.length = ArrayPrototype.length;
+
+	ElementPrototype.matchesSelector = ElementPrototype.matchesSelector ||
+	ElementPrototype.mozMatchesSelector ||
+	ElementPrototype.msMatchesSelector ||
+	ElementPrototype.oMatchesSelector ||
+	ElementPrototype.webkitMatchesSelector ||
+	function matchesSelector(selector) {
+		return ArrayPrototype.indexOf.call(this.parentNode.querySelectorAll(selector), this) > -1;
+	};
+
+	ElementPrototype.ancestorQuerySelectorAll = ElementPrototype.ancestorQuerySelectorAll ||
+	ElementPrototype.mozAncestorQuerySelectorAll ||
+	ElementPrototype.msAncestorQuerySelectorAll ||
+	ElementPrototype.oAncestorQuerySelectorAll ||
+	ElementPrototype.webkitAncestorQuerySelectorAll ||
+	function ancestorQuerySelectorAll(selector) {
+		for (var cite = this, newNodeList = new NodeList; cite = cite.parentElement;) {
+			if (cite.matchesSelector(selector)) ArrayPrototype.push.call(newNodeList, cite);
+		}
+
+		return newNodeList;
+	};
+
+	ElementPrototype.ancestorQuerySelector = ElementPrototype.ancestorQuerySelector ||
+	ElementPrototype.mozAncestorQuerySelector ||
+	ElementPrototype.msAncestorQuerySelector ||
+	ElementPrototype.oAncestorQuerySelector ||
+	ElementPrototype.webkitAncestorQuerySelector ||
+	function ancestorQuerySelector(selector) {
+		return this.ancestorQuerySelectorAll(selector)[0] || null;
+	};
+})(this, Element.prototype, Array.prototype);
+
+/* Helper Functions
+/* ========================================================================== */
+
+function generateTableRow() {
+	var emptyColumn = document.createElement('tr');
+
+	emptyColumn.innerHTML = '<td><a class="cut">-</a><span contenteditable></span></td>' +
+		'<td><span contenteditable></span></td>' +
+		'<td><span data-prefix>$</span><span contenteditable>0.00</span></td>' +
+		'<td><span contenteditable>0</span></td>' +
+		'<td><span data-prefix>$</span><span>0.00</span></td>';
+
+	return emptyColumn;
+}
+
+function parseFloatHTML(element) {
+	return parseFloat(element.innerHTML.replace(/[^\d\.\-]+/g, '')) || 0;
+}
+
+function parsePrice(number) {
+	return number.toFixed(2).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1,');
+}
+
+/* Update Number
+/* ========================================================================== */
+
+function updateNumber(e) {
+	var
+	activeElement = document.activeElement,
+	value = parseFloat(activeElement.innerHTML),
+	wasPrice = activeElement.innerHTML == parsePrice(parseFloatHTML(activeElement));
+
+	if (!isNaN(value) && (e.keyCode == 38 || e.keyCode == 40 || e.wheelDeltaY)) {
+		e.preventDefault();
+
+		value += e.keyCode == 38 ? 1 : e.keyCode == 40 ? -1 : Math.round(e.wheelDelta * 0.025);
+		value = Math.max(value, 0);
+
+		activeElement.innerHTML = wasPrice ? parsePrice(value) : value;
+	}
+
+	updateInvoice();
+}
+
+/* Update Invoice
+/* ========================================================================== */
+
+function updateInvoice() {
+	var total = 0;
+	var cells, price, total, a, i;
+
+	// update inventory cells
+	// ======================
+
+	for (var a = document.querySelectorAll('table.inventory tbody tr'), i = 0; a[i]; ++i) {
+		// get inventory row cells
+		cells = a[i].querySelectorAll('span:last-child');
+
+		// set price as cell[2] * cell[3]
+		price = parseFloatHTML(cells[2]) * parseFloatHTML(cells[3]);
+
+		// add price to total
+		total += price;
+
+		// set row total
+		cells[4].innerHTML = price;
+	}
+
+	// update balance cells
+	// ====================
+
+	// get balance cells
+	cells = document.querySelectorAll('table.balance td:last-child span:last-child');
+
+	// set total
+	cells[0].innerHTML = total;
+
+	// set balance and meta balance
+	cells[2].innerHTML = document.querySelector('table.meta tr:last-child td:last-child span:last-child').innerHTML = parsePrice(total - parseFloatHTML(cells[1]));
+
+	// update prefix formatting
+	// ========================
+
+	var prefix = document.querySelector('#prefix').innerHTML;
+	for (a = document.querySelectorAll('[data-prefix]'), i = 0; a[i]; ++i) a[i].innerHTML = prefix;
+
+	// update price formatting
+	// =======================
+
+	for (a = document.querySelectorAll('span[data-prefix] + span'), i = 0; a[i]; ++i) if (document.activeElement != a[i]) a[i].innerHTML = parsePrice(parseFloatHTML(a[i]));
+}
+
+/* On Content Load
+/* ========================================================================== */
+
+function onContentLoad() {
+	updateInvoice();
+
+	var
+	input = document.querySelector('input'),
+	image = document.querySelector('img');
+
+	function onClick(e) {
+		var element = e.target.querySelector('[contenteditable]'), row;
+
+		element && e.target != document.documentElement && e.target != document.body && element.focus();
+
+		if (e.target.matchesSelector('.add')) {
+			document.querySelector('table.inventory tbody').appendChild(generateTableRow());
+		}
+		else if (e.target.className == 'cut') {
+			row = e.target.ancestorQuerySelector('tr');
+
+			row.parentNode.removeChild(row);
+		}
+
+		updateInvoice();
+	}
+
+	function onEnterCancel(e) {
+		e.preventDefault();
+
+		image.classList.add('hover');
+	}
+
+	function onLeaveCancel(e) {
+		e.preventDefault();
+
+		image.classList.remove('hover');
+	}
+
+	function onFileInput(e) {
+		image.classList.remove('hover');
+
+		var
+		reader = new FileReader(),
+		files = e.dataTransfer ? e.dataTransfer.files : e.target.files,
+		i = 0;
+
+		reader.onload = onFileLoad;
+
+		while (files[i]) reader.readAsDataURL(files[i++]);
+	}
+
+	function onFileLoad(e) {
+		var data = e.target.result;
+
+		image.src = data;
+	}
+
+	if (window.addEventListener) {
+		document.addEventListener('click', onClick);
+
+		document.addEventListener('mousewheel', updateNumber);
+		document.addEventListener('keydown', updateNumber);
+
+		document.addEventListener('keydown', updateInvoice);
+		document.addEventListener('keyup', updateInvoice);
+
+		input.addEventListener('focus', onEnterCancel);
+		input.addEventListener('mouseover', onEnterCancel);
+		input.addEventListener('dragover', onEnterCancel);
+		input.addEventListener('dragenter', onEnterCancel);
+
+		input.addEventListener('blur', onLeaveCancel);
+		input.addEventListener('dragleave', onLeaveCancel);
+		input.addEventListener('mouseout', onLeaveCancel);
+
+		input.addEventListener('drop', onFileInput);
+		input.addEventListener('change', onFileInput);
+	}
+}
+
+window.addEventListener && document.addEventListener('DOMContentLoaded', onContentLoad);
+
+
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="appdrag-button-container" style="text-align:center;margin-top:20px !important;margin-right:0 !important;margin-bottom:0 !important;margin-left:0;padding:0 !important" margin-desktop-top="20" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" market-id="3698443" owner-id="1" btn-align="center">
+                  <span class="appdrag-button" hover-color="rgba(255,255,255,1)" hover-background-color="primary-color" style="color:#9e9e9e;border:1px solid #9e9e9e;border-radius:6px;padding:10px 12px;font-size:15px;font-family:Roboto;font-weight:initial;background:#fff" border-hover-top-color="rgba(158,158,158,1)" border-hover-bottom-color="rgba(158,158,158,1)" border-hover-left-color="rgba(158,158,158,1)" border-hover-right-color="rgba(158,158,158,1)" fs-d="15"><span>Confirm and Submit Generated Total</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-smp-12 col-md-12">
+                <div class="appdrag-embed" cursor-pos="3" embed-title="Edit HTML Code" category="Source Code" market-id="3699549" owner-id="1">
+                  <div class="appdrag-field translatable-attrs" type="number" field-name="number" category="Cloud Backend Inputs" translatable-attrs="field-error-validation">
+                    <input type="number" name="number" placeholder="0" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="appdrag-element appallin-universal-divider-container au-pb-40 au-pt-40" style="text-align:center;padding-top:20px !important;padding-bottom:20px !important" market-id="3698497" owner-id="1">
+                  <div class="appallin-universal-divider appdrag-palette-background-color-dark-primary-color" style="height:3px !important;width:90% !important">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12" style="box-shadow:#646464 2px 2px 10px 0;background-color:rgba(242,242,242,.7)" shadow-enable="true">
+                <p style="position:relative;text-align:center !important;padding:50px 0 0 !important;margin-top:0 !important;margin-bottom:0 !important" market-id="3700137" owner-id="4" class="dynamic-sized-element" padding-desktop-top="50" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0">
+                  <span style="font-size:36px">Just want to submit the total? </span>
+                </p>
+                <p style="position:relative;text-align:center !important" market-id="3700137" owner-id="4">
+                  <span class="Light"><span style="font-size:34px">     No problem</span></span>
+                </p>
+                <table class="appdrag-structure-element" category="Tables" market-id="3698696" owner-id="1">
+                  <tbody>
+                    <tr>
+                      <td style="width:33.3333%" height="20" table-desktop-width="33.333333333333336%" table-mobile-width="33.333333333333336%" table-tablet-width="33.333333333333336%" table-tablet-portrait-width="33.333333333333336%">
+                      </td>
+                      <td style="width:33.3333%" height="20" table-desktop-width="33.333333333333336%" table-mobile-width="33.333333333333336%" table-tablet-width="33.333333333333336%" table-tablet-portrait-width="33.333333333333336%">
+                        <div class="appdrag-element appdrag-field dynamic-sized-element appdrag-palette-border-top-color-primary-color appdrag-palette-border-left-color-primary-color appdrag-palette-border-right-color-primary-color appdrag-palette-border-bottom-color-primary-color translatable-attrs" type="number" style="border-width:0;border-style:solid;font-size:16px;letter-spacing:0;border-top-left-radius:0;border-bottom-right-radius:0;box-shadow:none;border-color:#ff9800;margin:0 5px 20px 0 !important;padding:0 !important" margin-desktop-bottom="20" padding-desktop-top="0" placeholder-color="rgba(232,232,232,1)" id="dfj1u22k1j7" shadow-enable="false" shadow-color="rgba(102,101,101,1)" shadow-size="4" field-name="manualTotal" field-error-validation="" translatable-attrs="field-error-validation" placeholder-id="dfk1ft1y1y4" category="Cloud Backend Inputs" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" market-id="3699908" owner-id="4" margin-desktop-left="0" margin-desktop-right="">
+                          <input type="number" name="manualTotal" placeholder="0" class="form-control" style="height:42px;text-indent:5px;border-width:1px;border-color:#dfdfdf;border-style:solid" pattern="[0-9]*">
+                          <style class="placeholder-color">
+                            .appdrag-element[placeholder-id='dfk1ft1y1y4'] ::-webkit-input-placeholder{color:rgba(232,232,232,1)}.appdrag-element[placeholder-id='dfk1ft1y1y4'] :moz-placeholder{color:rgba(232,232,232,1)}.appdrag-element[placeholder-id='dfk1ft1y1y4'] ::-moz-placeholder{color:rgba(232,232,232,1)}.appdrag-element[placeholder-id='dfk1ft1y1y4'] :-ms-input-placeholder{color:rgba(232,232,232,1)}
+                          </style>
+                        </div>
+                        <div class="appdrag-button-container" style="text-align:center;margin-left:0;margin-top:0 !important;margin-right:0 !important;margin-bottom:0 !important;padding:0 !important" margin-desktop-top="0" margin-desktop-bottom="0" margin-desktop-left="0" margin-desktop-right="0" padding-desktop-top="0" padding-desktop-bottom="0" padding-desktop-left="0" padding-desktop-right="0" market-id="3698443" owner-id="1" btn-align="center">
+                          <span class="appdrag-button cloudbackend-trigger translatable-attrs" hover-color="rgba(255,255,255,1)" hover-background-color="#9E9E9E" style="color:#9e9e9e;border:1px solid #9e9e9e;border-radius:6px;padding:10px 12px;font-size:15px;font-family:Roboto;font-weight:initial;background:#fff" border-hover-top-color="rgba(158,158,158,1)" border-hover-bottom-color="rgba(158,158,158,1)" border-hover-left-color="rgba(158,158,158,1)" border-hover-right-color="rgba(158,158,158,1)" fs-d="15" cb-trigger-function="/bookings/ninjaRequestsPayment" cb-trigger-fn-type="POST" cb-trigger-params="%5B%7B%22parameter%22%3A%22total%22%2C%22type%22%3A%22field%22%2C%22formula%22%3A%22%22%2C%22value%22%3A%22%22%2C%22field%22%3A%22manualTotal%22%7D%2C%7B%22parameter%22%3A%22taskId%22%2C%22type%22%3A%22formula%22%2C%22formula%22%3A%22getParamFromUrl('taskId')%22%2C%22value%22%3A%22%22%2C%22field%22%3Anull%7D%2C%7B%22parameter%22%3A%22paymentMethod%22%2C%22type%22%3A%22field%22%2C%22formula%22%3A%22%22%2C%22value%22%3A%22%22%2C%22field%22%3A%22paymentType%22%7D%5D" cb-trigger-pre-cc="return true; // return false to cancel the execution" cb-trigger-post-msg-on="1" cb-trigger-post-msg="Payment successfully requested. You will receive an email, if the customer pays online" cb-trigger-post-cc="console.log(response); // String response from the server" translatable-attrs="cb-trigger-pre-msg,cb-trigger-post-msg"><span>Manually submit total</span></span>
+                        </div>
+                      </td>
+                      <td style="width:33.3333%" height="20" table-desktop-width="33.333333333333336%" table-mobile-width="33.333333333333336%" table-tablet-width="33.333333333333336%" table-tablet-portrait-width="33.333333333333336%">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="cke_screen_reader_only cke_copyformatting_notification">
+      <div aria-live="polite">
+      </div>
+    </div>
+    <script id="appdrag-js" async src="./js/appdrag.js">
+    </script>
+  </body>
+</html>
